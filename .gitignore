@@ -1,0 +1,6 @@
+# common
+node_modules
+certificates
+
+# next.js
+build

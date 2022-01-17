@@ -18,7 +18,7 @@ module.exports = (phase, { defaultConfig }) => {
         pageExtensions: ['jsx', 'js', 'tsx', 'ts'],
         // assetPrefix: isProd ? 'https://cdn.mydomain.com' : '', // CDN assets prefix
         sassOptions: {
-            includePaths: [path.join(__dirname, 'styles')],
+            includePaths: [path.join(__dirname, '/lib/sass')],
         },
         compress: false,
         poweredByHeader: false,

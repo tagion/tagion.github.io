@@ -1,10 +1,13 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { Html, Head, Main, NextScript } from 'next/document';
 
-const DefaultDocument = () => {
+import { DefaultPage } from 'ui/templates';
+
+const Document = () => {
 	return (
 		<Html>
 			<Head />
 			<body>
+				<DefaultPage />
 				<Main />
 				<NextScript />
 			</body>
@@ -12,4 +15,4 @@ const DefaultDocument = () => {
 	);
 };
 
-export default DefaultDocument;
+export default Document;

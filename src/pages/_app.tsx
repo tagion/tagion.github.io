@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../lib/sass/index.sass';
 
 import { AppProps } from 'next/app';
 

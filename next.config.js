@@ -1,5 +1,5 @@
 const path = require('path')
-
+// const withImages = require("next-images");
 const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
 
 module.exports = (phase, { defaultConfig }) => {
@@ -18,7 +18,7 @@ module.exports = (phase, { defaultConfig }) => {
         pageExtensions: ['jsx', 'js', 'tsx', 'ts'],
         // assetPrefix: isProd ? 'https://cdn.mydomain.com' : '', // CDN assets prefix
         sassOptions: {
-            includePaths: [path.join(__dirname, '/lib/sass')],
+            includePaths: [path.join(__dirname, '/lib/scss')],
         },
         compress: false,
         poweredByHeader: false,
@@ -43,15 +43,6 @@ module.exports = (phase, { defaultConfig }) => {
             // your project has ESLint errors.
             ignoreDuringBuilds: process.env.NODE_ENV === 'development',
         },
-        async rewrites() {
-            return [
-                // rewrites rules
-                // {
-                //     source: '/about',
-                //     destination: '/',
-                // },
-            ]
-        },
         async headers() {
             return [
                 // custom page headers
@@ -71,17 +62,22 @@ module.exports = (phase, { defaultConfig }) => {
             ]
         },
         webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-            // to-do: Add MDX support
             // config.module.rules.push({
-            //     test: /\.(mdx.ts|mdx.tsx|mdx.js|mdx.jsx)/,
-            //     use: [
-            //         options.defaultLoaders.babel,
-            //         {
-            //             loader: '@mdx-js/loader',
-            //             options: pluginOptions.options,
-            //         },
-            //     ],
+            //     test: /\.svg$/,
+            //     type: 'asset/src',
+            //     resourceQuery: /src/,
             // })
+            config.module.rules.push({
+                test: /\.svg$/,
+                issuer: {
+                    and: [/\.(js|ts)x?$/]
+                },
+                use: [{
+                    loader: '@svgr/webpack',
+                }],
+
+            });
+
 
             // Important: return the modified config
             return config

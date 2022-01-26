@@ -1,18 +1,41 @@
-import { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
-import { DefaultPage } from 'ui/templates';
+export default class CustomDocument extends Document {
+	static async getInitialProps(ctx) {
+		const sheet = new ServerStyleSheet();
+		const originalRenderPage = ctx.renderPage;
 
-const Document = () => {
-	return (
-		<Html>
-			<Head />
-			<body>
-				<DefaultPage />
-				<Main />
-				<NextScript />
-			</body>
-		</Html>
-	);
-};
+		try {
+			ctx.renderPage = () =>
+				originalRenderPage({
+					enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
+				});
 
-export default Document;
+			const initialProps = await Document.getInitialProps(ctx);
+			return {
+				...initialProps,
+				styles: (
+					<>
+						{initialProps.styles}
+						{sheet.getStyleElement()}
+					</>
+				),
+			};
+		} finally {
+			sheet.seal();
+		}
+	}
+
+	render() {
+		return (
+			<Html>
+				<Head />
+				<body>
+					<Main />
+					<NextScript />
+				</body>
+			</Html>
+		);
+	}
+}

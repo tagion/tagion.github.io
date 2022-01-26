@@ -1,0 +1,181 @@
+{
+	"hero": {
+		"children": [
+			{ "content": "New Money" },
+			{ "content": "Decentralized" },
+			{ "content": "Permissionless" },
+			{ "content": "Borderless" }
+		]
+	},
+	"welcome": {
+		"title": "Welcome to the Future of Money",
+		"children": [
+			{
+				"content": "Global real-time connections among people, devices, and businesses make up the new type of borderless network economy. Tagion is money designed for this new economy."
+			},
+			{
+				"content": "We are convinced that the power of money should be used to benefit society rather than single individuals or institutions. Tagion provides borderless access to financial services, finally making banking inclusive and fostering every type of innovation worldwide."
+			}
+		]
+	},
+	"roadmap": {
+		"title": "Roadmap",
+		"children": [
+			{
+				"title": "α-Version of Gossip Protocol",
+				"children": [{ "content": "Release" }, { "content": "Oct, 2018" }]
+			},
+			{
+				"title": "α-Version of DART",
+				"children": [{ "content": "Release" }, { "content": "Apr, 2019" }]
+			},
+			{
+				"title": "β-Version of HiBON and HiBON-RPC",
+				"children": [{ "content": "Release" }, { "content": "Oct, 2019" }]
+			},
+			{
+				"title": "Play Network",
+				"children": [{ "content": "The Next Big Thing" }, { "content": "Early 2022" }]
+			}
+		]
+	},
+	"ticker": {
+		"title": "Ticker",
+		"children": [
+			{ "content": "We Are New Money|We Are Decentralized" },
+			{ "content": "We Are Permissionless|We Are Borderless" }
+		]
+	},
+	"tagionVsCrypto": {
+		"title": "Tagion vs Crypto",
+		"children": [
+			{
+				"title": "Token Supply",
+				"content": "The speculative nature of cryptocurrencies is hurting their adoption in the real economy. That is why Tagion's token supply is controlled by the algorithm, which uses internal metrics, like quantity and velocity of money in the system. Simply put, the total supply will always try to stabilize at a level accounted for adoption."
+			},
+			{
+				"title": "Scalability",
+				"content": "Tagion is governed collectively as a common resource. All decisions are made on the network via weighted voting. People who contribute more have more say in the system. Also, the network rewards all contributors, not only those who validate transactions."
+			},
+			{
+				"title": "Token Supply",
+				"content": "Innovative aBFT consensus mechanism (Hashgraph) and possibility to create own subnetwork with own dart (Sub-DART) enables sharding for scalability and real DEX with price-matching for interoperability."
+			}
+		]
+	},
+	"tagionVsCash": {
+		"title": "Tagion vs Cash",
+		"children": [
+			{
+				"title": "Cryptographic Ownership",
+				"content": "Tagion uses cryptographic signatures to ensure the user's data ownership. Each person is in full control of his money without a trusted third-party."
+			},
+			{
+				"title": "Fast Settlement",
+				"content": "Money transfers take days to settle in the legacy banking system, which is why we use intermediaries like Visa and Mastercard to pre-confirm transactions (for a fee). The final settlement in Tagion usually takes less than a minute, while the alternative to pre-confirmation (depending on your payment app) takes seconds."
+			},
+			{
+				"title": "Integrations",
+				"content": "Tagion is a digital native, which means it can be integrated directly into apps and games without the need for banks or third-party service providers"
+			},
+			{
+				"title": "Reliability",
+				"content": "Tagion database software is open source and free to use. It connects computers to form a large network that serves as a single source of truth. The data is replicated throughout the network, making it extremely accessible and nearly impossible to manipulate."
+			}
+		]
+	},
+	"faq": {
+		"title": "FAQ",
+		"children": [
+			{
+				"title": "What is Tagion?",
+				"children": [
+					{
+						"content": "Tagion is decentralised, sustainable, and secure digital money that aims to eliminate inefficiencies in existing financial systems."
+					},
+					{
+						"content": "Uniquely designed to provide simple peer-to-peer transfer of value, Tagion empowers individuals with the most efficient and accessible digital money possible, connecting them to the global economy with minimal impact. No middlemen, almost zero fees, and no waiting. It's how digital money should feel: accessible, borderless and simple to use."
+					},
+					{
+						"content": "Tagion allows anyone with an internet connection to access financial services that are largely owned and maintained by the users."
+					}
+				]
+			},
+			{
+				"title": "What problem does Tagion solve?",
+				"children": [
+					{
+						"content": "Tagion is decentralised, sustainable, and secure digital money that aims to eliminate inefficiencies in existing financial systems."
+					}
+				]
+			},
+			{
+				"title": "What is the Hashgraph consensus mechanism?",
+				"children": [
+					{
+						"content": "Tagion is decentralised, sustainable, and secure digital money that aims to eliminate inefficiencies in existing financial systems."
+					}
+				]
+			},
+			{
+				"title": "Where can I get Tagions?",
+				"children": [
+					{
+						"content": "Tagion is decentralised, sustainable, and secure digital money that aims to eliminate inefficiencies in existing financial systems."
+					}
+				]
+			},
+			{
+				"title": "Where can I keep my Tagions?",
+				"children": [
+					{
+						"content": "Tagion is decentralised, sustainable, and secure digital money that aims to eliminate inefficiencies in existing financial systems."
+					}
+				]
+			},
+			{
+				"title": "How can I stay informed on all technical updates and discussions?",
+				"children": [
+					{
+						"content": "Tagion is decentralised, sustainable, and secure digital money that aims to eliminate inefficiencies in existing financial systems."
+					}
+				]
+			}
+		]
+	},
+	"community": {
+		"title": "Community",
+		"children": [
+			{
+				"title": "Telegram",
+				"label": "Discussions",
+				"content": "Join the like-minded",
+				"url": "http://google.com"
+			},
+			{
+				"title": "Twitter",
+				"label": "Announcements",
+				"content": "Follow the latest news",
+				"url": "http://google.com"
+			},
+			{
+				"title": "Facebook",
+				"label": "Enlightenments",
+				"content": "Follow the latest news",
+				"url": "http://google.com"
+			},
+			{
+				"title": "Youtube",
+				"label": "Enlightenments",
+				"content": "Learn more about Tagion",
+				"url": "http://google.com"
+			},
+			{
+				"title": "Reddit",
+				"label": "Entertainment",
+				"content": "Share your favorite memes",
+				"url": "http://google.com"
+			}
+		]
+	}
+}

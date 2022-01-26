@@ -1,15 +1,14 @@
-import { Header } from 'ui/organisms';
+import { Header, Footer } from 'ui/organisms';
 
 import { Styled } from './index.styled';
 
-const DefaultPage = () => {
+const DefaultPage: React.FunctionComponent = ({ children }) => {
 	return (
-		<>
+		<Styled.PageWrapper>
 			<Header />
-			<Styled.PageWrapper className='container-lg'>
-				<h2>Default Page</h2>
-			</Styled.PageWrapper>
-		</>
+			<Styled.Main>{children}</Styled.Main>
+			<Footer />
+		</Styled.PageWrapper>
 	);
 };
 

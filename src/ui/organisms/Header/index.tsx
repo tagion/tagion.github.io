@@ -23,14 +23,8 @@ const Header = () => {
 				<Menu />
 				<Burger onClick={() => setIsOpened(!isOpened)} isOpened={isOpened} />
 			</Styled.Container>
-			<Styled.OffsetMenu isOpened={isOpened}>
-				<Menu
-					withSpec={true}
-					closeMenu={() => {
-						console.log('close menu');
-						setIsOpened(false);
-					}}
-				/>
+			<Styled.OffsetMenu $isOpened={isOpened}>
+				<Menu withSpec={true} closeMenu={() => setIsOpened(false)} />
 			</Styled.OffsetMenu>
 		</>
 	);

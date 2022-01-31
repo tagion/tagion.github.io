@@ -7,5 +7,6 @@ export enum SCREEN_SIZES {
 	mobile = 375,
 	tablet = 768,
 	desktop = 1024,
-	desktopxl = 1440,
+	desktopL = 1280,
+	desktopXl = 1440,
 }

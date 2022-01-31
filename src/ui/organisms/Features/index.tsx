@@ -7,27 +7,28 @@ import { Props } from './index.model';
 
 const ImageContainer = ({ children, className = '' }) => {
 	return (
-		<Col md={4} className={`p-5 ${className}`}>
+		<Styled.Col md={4} className={className}>
 			{children}
-		</Col>
+		</Styled.Col>
 	);
 };
 
 const Features: React.FunctionComponent<Props> = ({ imageIsRight = false, title = '', image, children, ...rest }) => {
 	return (
-		<Container className='border-primary border-bottom border-end border-start' {...rest}>
-			<Row>
+		<Container className='border-primary border-bottom border-end border-start p-0' {...rest}>
+			<Styled.Title>{title}</Styled.Title>
+			<Row className='m-0'>
 				{image && !imageIsRight && (
 					<ImageContainer className='border-primary border-end'>
 						<FeatureImage img={<>{image}</>} />
 					</ImageContainer>
 				)}
-				<Col md={8}>
-					<Container className='py-6 px-5'>
-						<h2 className='mb-45'>{title}</h2>
+				<Styled.TextContainer md={8}>
+					<Container className='p-3 py-lg-6 px-lg-5'>
+						<Styled.DesktopTitle>{title}</Styled.DesktopTitle>
 						{children}
 					</Container>
-				</Col>
+				</Styled.TextContainer>
 				{image && imageIsRight && (
 					<ImageContainer className='border-primary border-start'>
 						<FeatureImage img={image} />

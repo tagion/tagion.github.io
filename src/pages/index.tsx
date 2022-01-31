@@ -1,8 +1,11 @@
+import { useEffect, useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { Container } from 'react-bootstrap';
 
 import { Hero, Highlighted, Roadmap, FeatureCards, Features, Accordion, Community } from 'ui/organisms';
 import { Ticker } from 'ui/molecules';
+
+import { isMobile } from 'lib/utils';
 
 import content from 'lib/content/index.json';
 import ComputerIcon from 'lib/img/computer.svg';
@@ -48,9 +51,23 @@ const WelcomeContent = () => (
 );
 
 const Index = () => {
-	const accordionItems = faqContent.children.map(({ title, children }) => ({
+	const [mobile, setMobile] = useState(false);
+
+	useEffect(() => {
+		setMobile(isMobile());
+	}, []);
+
+	const faqItems = faqContent.children.map(({ title, children }) => ({
 			title,
-			children: children.map((i) => <p key={uuid()}>{i.content}</p>),
+			content: children.map((i) => <p key={uuid()}>{i.content}</p>),
+		})),
+		tagionVsCryptoItems = tagionVsCryptoContent.children.map(({ title, content }) => ({
+			title,
+			content: <p>{content}</p>,
+		})),
+		tagionVsCashItems = tagionVsCash.children.map(({ title, content }) => ({
+			title,
+			content: <p>{content}</p>,
 		})),
 		roadmapItems = roadmapContent.children.map(({ title, children }) => ({
 			title,
@@ -67,14 +84,14 @@ const Index = () => {
 			<Roadmap title={roadmapContent.title} items={roadmapItems} />
 			<FeatureCards id='how-it-works' />
 			<Features id='features' title={tagionVsCryptoContent.title} image={<ComputerIcon width='300px' />}>
-				<TagionVsCryptoContent />
+				{mobile ? <Accordion items={tagionVsCryptoItems} /> : <TagionVsCryptoContent />}
 			</Features>
 			<Features title={tagionVsCash.title} image={<BankIcon width='365px' />} imageIsRight={true}>
-				<TagionVsCashContent />
+				{mobile ? <Accordion items={tagionVsCashItems} /> : <TagionVsCashContent />}
 			</Features>
 			<Ticker />
 			<Highlighted id='faq' title={faqContent.title}>
-				<Accordion items={accordionItems} />
+				<Accordion items={faqItems} />
 			</Highlighted>
 			<Community id='community' />
 		</>

@@ -19,25 +19,23 @@ const Styled = {
 			transform: translateX(-50%);
 		}
 	`,
-	OffsetMenu: styled.div.attrs(({ isOpened = false }: { isOpened: boolean }) => ({
-		className: `border-primary border-end border-start ${isOpened ? 'opened' : ''}`,
-		isOpened,
+	OffsetMenu: styled(Container).attrs(({ $isOpened = false }: { $isOpened: boolean }) => ({
+		className: `p-0 border-primary border-end border-start ${$isOpened ? 'opened' : ''}`,
+		$isOpened,
 	}))`
 		position: fixed;
 		top: 81px;
-		left: 0;
+		left: 50%;
 		width: 100%;
 		background: ${BG_COLOR};
 		transition: 0.25s ease;
-		transform: translateY(-100%);
-		// opacity: 0;
+		transform: translateY(-100%) translateX(-50%);
 		pointer-event: none;
 		z-index: 2;
 
 		&.opened {
-			transform: translateY(0%);
+			transform: translateY(0%) translateX(-50%);
 			pointer-event: auto;
-			// opacity: 1;
 		}
 
 		> nav {

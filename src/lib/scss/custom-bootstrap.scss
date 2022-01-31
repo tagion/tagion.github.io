@@ -44,8 +44,10 @@ $spacers: (
 	2: $spacer,
 	3: $spacer * 1.5,
 	4: $spacer * 2.25,
+	425: $spacer * 2.5,
 	45: $spacer * 3,
 	5: $spacer * 3.5,
+	55: $spacer * 4,
 	6: $spacer * 4.5,
 	7: $spacer * 6.5,
 ) !default;
@@ -56,3 +58,6 @@ $spacers: (
 @import 'badge';
 @import 'button';
 @import 'grid';
+@import 'carousel';
+
+@import './mixins/index';

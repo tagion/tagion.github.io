@@ -1,10 +1,10 @@
 import { Container, Row, Col } from 'react-bootstrap';
 
+import { isMobile } from 'lib/utils';
+
 import { Link } from 'ui/atoms';
 
 import { Styled } from './index.styled';
-
-import LogoIcon from 'lib/img/logo_icon.svg';
 
 const Paragraph = ({ children, ...rest }) => (
 	<p className='mb-2' {...rest}>
@@ -15,34 +15,36 @@ const Paragraph = ({ children, ...rest }) => (
 const Footer = () => {
 	return (
 		<Styled.Container>
-			<Row className='align-items-center'>
-				<Col>
-					<LogoIcon className='mb-2' width='30px' height='30px' />
-					<Paragraph className='mb-0'>
-						&copy; {new Date().getFullYear()} Tagion. All rights reserved.
-					</Paragraph>
+			<Row className='align-items-center m-0'>
+				<Col xs={{ span: 12 }} lg={{ span: 3, order: 1 }}>
+					<Styled.Logo />
+					<Styled.Copyright>&copy; {new Date().getFullYear()} Tagion. All rights reserved.</Styled.Copyright>
 				</Col>
-				<Col md={3}>
+				<Col xs={{ span: 5 }} lg={{ order: 2, span: 3, offset: 1 }}>
 					<Paragraph>
 						<Link href='#'>Contact Us</Link>
 					</Paragraph>
-					<Paragraph className='mb-0'>
-						<Link href='https://google.com' isExternal target='_blank'>
+					<Styled.Paragraph>
+						<Link
+							href='https://google.com'
+							isExternal
+							target='_blank'
+							className='mb-2 mb-lg-0 d-block d-lg-inline'
+						>
 							Privacy Policy
 						</Link>
-						{' | '}
-						<Link href='https://google.com' isExternal target='_blank'>
+						<Link href='https://google.com' isExternal target='_blank' className='d-block d-lg-inline'>
 							Terms of Use
 						</Link>
-					</Paragraph>
+					</Styled.Paragraph>
 				</Col>
-				<Col md={2}>
-					<Paragraph>
+				<Col xs={{ span: 3, offset: 3 }} lg={{ order: 3, span: 2 }}>
+					<Paragraph style={{ whiteSpace: 'nowrap' }}>
 						<Link href='https://github.com' isExternal withIcon target='_blank'>
 							GitHub
 						</Link>
 					</Paragraph>
-					<Paragraph className='mb-0'>
+					<Paragraph className='mb-0' style={{ whiteSpace: 'nowrap' }}>
 						<Link href='https://github.com' isExternal withIcon target='_blank'>
 							TechPaper
 						</Link>

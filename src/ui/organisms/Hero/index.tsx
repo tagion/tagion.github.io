@@ -15,10 +15,9 @@ const Hero = () => {
 	return (
 		<Container className='overflow-hidden'>
 			<Row className='border-primary border-bottom'>
-				<Col className='px-5 py-7 border-primary border-end border-start'>
+				<Col className='px-3 py-425 px-md-5 py-md-7 border-primary border-end border-start' lg={6}>
 					<Styled.Title>
 						We Are
-						{/* <span id={typingID}>New Money</span> */}
 						<Typewriter
 							options={{
 								strings: typingStrings,
@@ -28,21 +27,21 @@ const Hero = () => {
 							}}
 						/>
 					</Styled.Title>
-					<p className='mb-5'>
+					<p className='mb-3 mb-md-5 fw-bold'>
 						Tagion is designed as an independent monetary system to serve as an{' '}
 						<mark>efficient medium of exchange</mark>, a <mark>convenient unit of account</mark>, and a{' '}
 						<mark>reliable store of value</mark>
 					</p>
-					<Link isExternal target='_blank' href='https://google.com'>
+					<Styled.Link isExternal target='_blank' href='https://google.com'>
 						<Button style={{ minWidth: 220 }} className='me-3' withIcon>
 							GitHub
 						</Button>
-					</Link>
-					<Link isExternal target='_blank' href='https://google.com'>
+					</Styled.Link>
+					<Styled.Link isExternal target='_blank' href='https://google.com'>
 						<Button style={{ minWidth: 220 }} withIcon>
 							TechPaper
 						</Button>
-					</Link>
+					</Styled.Link>
 				</Col>
 				<Styled.Scene>
 					<Styled.Background />

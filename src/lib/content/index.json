@@ -39,6 +39,23 @@
 			}
 		]
 	},
+	"howItWorks": {
+		"title": "How Tagion Works",
+		"children": [
+			{
+				"title": "Distributed Database",
+				"content": "Tagion can be viewed as a large network of computers that form one large database. This database contains all Tagion bills and handles incoming transactions."
+			},
+			{
+				"title": "Secure Transactions",
+				"content": "Transactions are instructions to destroy input bill, and transfer its value to output bill. Each input bill must be digitally signed by its private key."
+			},
+			{
+				"title": "User Applications",
+				"content": "When a user wants to send money, all he has to do is send the network a valid transaction via the wallet app. The money will be quickly credited to the recipient's account."
+			}
+		]
+	},
 	"ticker": {
 		"title": "Ticker",
 		"children": [

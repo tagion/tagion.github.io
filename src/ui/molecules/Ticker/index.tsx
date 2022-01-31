@@ -13,15 +13,15 @@ const Ticker = () => {
 	const secondRowContent = tickerContent.children[1].content.split('|');
 
 	return (
-		<Container className='py-6 px-0 border-primary border-bottom border-end border-start'>
+		<Container className='py-425 px-0 py-lg-6 border-primary border-bottom border-end border-start'>
 			<ExtTicker>
-				{() => (
+				{({ index }) => (
 					<>
-						<Styled.Line className='mb-3'>
+						<Styled.Line className='mb-1'>
 							{firstRowContent.map((content) => (
 								<>
 									<span>{content}</span>
-									<LogoIcon width='52' height='55' className='mx-3' />
+									<LogoIcon className='mx-3' />
 								</>
 							))}
 						</Styled.Line>
@@ -29,7 +29,7 @@ const Ticker = () => {
 							{secondRowContent.map((content) => (
 								<>
 									<span>{content}</span>
-									<LogoIcon width='52' height='55' className='mx-3' />
+									<LogoIcon className='mx-3' />
 								</>
 							))}
 						</Styled.Line>

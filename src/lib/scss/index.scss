@@ -1,15 +1,11 @@
+@import 'variables';
 @import 'colors';
 @import 'fonts';
 
 @import 'custom-bootstrap';
 @import 'typography';
+@import 'swiper';
 @import 'base';
-
-// default svg size
-// svg {
-// width: 2rem;
-// height: 2rem;
-// }
 
 .no-scroll {
 	overflow: hidden;

@@ -11,15 +11,15 @@ const Roadmap: React.FunctionComponent<Props> = ({ title, items }, ...rest) => {
 			const isLastItem = i === items.length - 1;
 
 			return (
-				<Row key={uuid()} className={!isLastItem ? 'mb-3' : ''}>
-					<Col md={{ span: 4, offset: i * 3 }}>
-						<Card variant={isLastItem ? 'dashed' : 'primary'}>
+				<Row key={uuid()} className={`${!isLastItem ? 'mb-3' : ''}`}>
+					<Col lg={{ span: 4, offset: i * 3 }}>
+						<Styled.Card variant={isLastItem ? 'dashed' : 'primary'}>
 							<h4>{title}</h4>
 							<p className='mb-0'>{description}</p>
 							<p className='mb-0'>
 								Launch date: <time dateTime={Date.parse(date).toString()}>{date}</time>
 							</p>
-						</Card>
+						</Styled.Card>
 					</Col>
 				</Row>
 			);
@@ -29,8 +29,8 @@ const Roadmap: React.FunctionComponent<Props> = ({ title, items }, ...rest) => {
 		));
 
 	return (
-		<Container className='border-primary border-bottom border-end border-start px-5 py-6 overflow-hidden'>
-			<h2 className='text-center mb-5'>{title}</h2>
+		<Container className='border-primary border-bottom border-end border-start p-0 pb-lg-6 overflow-hidden'>
+			<Styled.Title>{title}</Styled.Title>
 			<Styled.Container>
 				{renderBG}
 				{renderItems}

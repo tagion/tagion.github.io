@@ -12,6 +12,7 @@ const Styled = {
 		border: 2px solid ${DEEP_TURQUOISE};
 		background: linear-gradient(0deg, rgba(65, 163, 169, 0.2), rgba(65, 163, 169, 0.2)),
 			linear-gradient(0deg, #111112, #111112);
+		flex-shrink: 0;
 
 		svg {
 			width: 22px;

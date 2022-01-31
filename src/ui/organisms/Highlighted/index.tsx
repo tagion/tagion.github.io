@@ -1,14 +1,25 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
+
+import { Link } from 'ui/atoms';
 
 import { Styled } from './index.styled';
 import { Props } from './index.model';
 
-const Highlighted: React.FunctionComponent<Props> = ({ title, children, ...rest }) => {
+import ArrowLeft from 'lib/img/arrow-left.svg';
+
+const Highlighted: React.FunctionComponent<Props> = ({ title, children, backLink = null, ...rest }) => {
 	return (
 		<Container className='border-primary border-bottom' {...rest}>
 			<Row>
 				<Styled.LeftCol>
-					<Styled.Title>{title}</Styled.Title>
+					<Styled.Title>
+						{backLink && (
+							<Link href='/'>
+								<ArrowLeft className='mb-1 me-1' />{' '}
+							</Link>
+						)}
+						{title}
+					</Styled.Title>
 				</Styled.LeftCol>
 				<Styled.RightCol>{children}</Styled.RightCol>
 			</Row>

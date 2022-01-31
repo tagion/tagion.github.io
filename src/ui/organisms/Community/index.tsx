@@ -23,6 +23,7 @@ const Community = (props) => {
 						description={content.children[0].content}
 						icon={<TgIcon />}
 						className='h-100'
+						style={{ height: 350 }}
 					/>
 				</Col>
 				<Col lg={4} className='px-lg-3'>
@@ -33,6 +34,7 @@ const Community = (props) => {
 						description={content.children[1].content}
 						icon={<FbIcon />}
 						className='mb-2 mb-lg-4'
+						style={{ height: 155 }}
 					/>
 					<SocialItem
 						url={content.children[2].url}
@@ -41,6 +43,7 @@ const Community = (props) => {
 						description={content.children[2].content}
 						icon={<FbIcon />}
 						className='mb-2'
+						style={{ height: 155 }}
 					/>
 				</Col>
 				<Col lg={4} className='px-lg-3'>
@@ -51,6 +54,7 @@ const Community = (props) => {
 						description={content.children[3].content}
 						icon={<FbIcon />}
 						className='mb-2 mb-lg-4'
+						style={{ height: 155 }}
 					/>
 					<SocialItem
 						url={content.children[4].url}
@@ -58,6 +62,7 @@ const Community = (props) => {
 						label={content.children[4].label}
 						description={content.children[4].content}
 						icon={<FbIcon />}
+						style={{ height: 155 }}
 					/>
 				</Col>
 			</Row>

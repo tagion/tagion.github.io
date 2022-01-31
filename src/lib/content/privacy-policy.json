@@ -1,0 +1,22 @@
+{
+	"privacyPolicy": {
+		"title": "Privacy Policy",
+		"children": [
+			{
+				"title": "Overview",
+				"content": "Dribbble Holdings Ltd. (“Dribbble”, “we”, “us” or “our”) is committed to protecting the privacy of personal information (i.e. any information relating to an identified or identifiable natural person) who visit the https://dribbble.com website and Dribbble mobile software application (collectively, the “Site”) and use the services available thereon (the “Services”). Amendments to this Privacy Policy will be posted to the Site and/or Services and will be effective when posted. Your continued use of the Site and/or Services following the posting of any amendment to this Privacy Policy shall constitute your acceptance of such amendment."
+			},
+			{
+				"title": "Your Consent",
+				"content": "By providing personal information to us and by retaining us to provide you with the Services, you voluntarily consent to the collection, use and disclosure of such personal information as specified in this Privacy Policy. The legal bases for our processing of personal information are primarily that the processing is necessary for providing the Services and that the processing is carried out in our legitimate interests, which are further explained below. Without limiting the foregoing, we may on occasion ask you to consent when we collect, use, or disclose your personal information in specific circumstances."
+			},
+			{
+				"title": "Aggregated Data",
+				"content": "We may also use your personal information to generate Aggregated Data for internal use and for sharing with others on a selective basis. “Aggregated Data” means records which have been stripped of information potentially identifying users, and which have been manipulated or combined to provide generalized, anonymous information. Your identity and personal information will be kept anonymous in Aggregated Data."
+			},
+			{
+				"content": "Dribbble may disclose your personal information to a third party for a business purpose. When we disclose personal information for a business purpose, we enter into a contract that describes the purpose and requires the recipient to both keep that personal information confidential and not use it for any purpose except performing the contract. We also take reasonable measures to ensure that these third parties provide sufficient guarantees to implement appropriate technical and organizational measures."
+			}
+		]
+	}
+}

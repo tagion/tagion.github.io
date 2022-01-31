@@ -25,12 +25,7 @@ const Footer = () => {
 						<Link href='#'>Contact Us</Link>
 					</Paragraph>
 					<Styled.Paragraph>
-						<Link
-							href='https://google.com'
-							isExternal
-							target='_blank'
-							className='mb-2 mb-lg-0 d-block d-lg-inline'
-						>
+						<Link href='/privacy-policy' className='mb-2 mb-lg-0 d-block d-lg-inline'>
 							Privacy Policy
 						</Link>
 						<Link href='https://google.com' isExternal target='_blank' className='d-block d-lg-inline'>

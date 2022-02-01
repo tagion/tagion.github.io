@@ -69,8 +69,9 @@ const Index = () => {
 			title,
 			content: <p>{content}</p>,
 		})),
-		roadmapItems = roadmapContent.children.map(({ title, children }) => ({
+		roadmapItems = roadmapContent.children.map(({ title, children, isComing = false }) => ({
 			title,
+			isComing,
 			description: children[0].content,
 			date: children[1].content,
 		}));
@@ -81,7 +82,7 @@ const Index = () => {
 			<Highlighted id='about' title={welcomeContent.title}>
 				<WelcomeContent />
 			</Highlighted>
-			<Roadmap title={roadmapContent.title} items={roadmapItems} />
+			<Roadmap id='roadmap' title={roadmapContent.title} items={roadmapItems} />
 			<FeatureCards id='how-it-works' />
 			<Features id='features' title={tagionVsCryptoContent.title} image={<ComputerIcon width='300px' />}>
 				{mobile ? <Accordion items={tagionVsCryptoItems} /> : <TagionVsCryptoContent />}

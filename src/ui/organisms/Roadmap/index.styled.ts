@@ -22,8 +22,22 @@ const Styled = {
 				display: none;
 			}
 		}
+
+		.offset-lg-3 {
+			margin-left: 16% !important;
+
+			@media (max-width: ${SCREEN_SIZES.desktop}px) {
+				margin-left: 0 !important;
+			}
+		}
+
+		.row:last-child .offset-lg-3 .card:before {
+			display: none;
+		}
 	`,
-	Title: styled.h2.attrs(() => ({ className: `text-center p-425 m-0 pt-lg-6 pb-lg-5 border-primary border-bottom border-lg-bottom-0` }))``,
+	Title: styled.h2.attrs(() => ({
+		className: `text-center p-425 m-0 pt-lg-6 pb-lg-5 border-primary border-bottom border-lg-bottom-0`,
+	}))``,
 	Card: styled(Card).attrs((props) => ({
 		...props,
 		className: `position-relative`,
@@ -35,9 +49,8 @@ const Styled = {
 			left: 50%;
 			transform: translateX(-50%) translateY(calc(100% + 1px));
 			width: 1px;
-			height: 1.5rem;
+			height: 2.25rem;
 			background: ${DEEP_TURQUOISE};
-			${({ variant }) => (variant === 'dashed' ? 'display: none;' : '')}
 
 			@media (min-width: ${SCREEN_SIZES.desktop}px) {
 				display: none;

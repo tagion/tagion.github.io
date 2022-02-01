@@ -16,12 +16,12 @@ const FeatureCards = ({ ...rest }) => {
 		{
 			title: content.howItWorks.children[0].title,
 			content: content.howItWorks.children[0].content,
-			icon: <DbIcon className='mx-auto' style={{ maxHeight: 200 }} />,
+			icon: <MedalIcon className='mx-auto' style={{ maxHeight: 200 }} />,
 		},
 		{
 			title: content.howItWorks.children[1].title,
 			content: content.howItWorks.children[1].content,
-			icon: <MedalIcon className='mx-auto' style={{ maxHeight: 200 }} />,
+			icon: <DbIcon className='mx-auto' style={{ maxHeight: 200 }} />,
 		},
 		{
 			title: content.howItWorks.children[2].title,

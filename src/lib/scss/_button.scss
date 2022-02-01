@@ -5,7 +5,7 @@
 	border-style: solid;
 	padding: 1rem 2rem;
 	font-weight: 700;
-	color: $body-color;
+	color: $aqua-island;
 	transition: border-color 0.25s ease, color 0.25s ease, background 0.25s ease;
 	background: linear-gradient(0deg, #41a3a933, rgba(65, 163, 169, 0.2)), linear-gradient(0deg, #111112, #111112);
 
@@ -25,6 +25,6 @@
 	}
 
 	&:focus {
-		color: $body-color;
+		color: $aqua-island;
 	}
 }

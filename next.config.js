@@ -1,6 +1,12 @@
 const path = require('path')
-// const withImages = require("next-images");
 const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
+const withMDX = require('@next/mdx')({
+    extension: /\.mdx?$/,
+    options: {
+        remarkPlugins: [],
+        rehypePlugins: [],
+    },
+})
 
 module.exports = (phase, { defaultConfig }) => {
     /**
@@ -11,7 +17,7 @@ module.exports = (phase, { defaultConfig }) => {
         /* config options here */
         env: {
             customKey: 'my-value',
-            test: process.env.TEST || 'hmmmmmm'
+            test: process.env.TEST || ''
         },
         // basePath: '/path', // base site path ex: 'example.com/path'
         distDir: 'build',
@@ -43,30 +49,7 @@ module.exports = (phase, { defaultConfig }) => {
             // your project has ESLint errors.
             ignoreDuringBuilds: process.env.NODE_ENV === 'development',
         },
-        async headers() {
-            return [
-                // custom page headers
-                // {
-                //     source: '/about',
-                //     headers: [
-                //         {
-                //             key: 'x-custom-header',
-                //             value: 'my custom header value',
-                //         },
-                //         {
-                //             key: 'x-another-custom-header',
-                //             value: 'my other custom header value',
-                //         },
-                //     ],
-                // },
-            ]
-        },
         webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-            // config.module.rules.push({
-            //     test: /\.svg$/,
-            //     type: 'asset/src',
-            //     resourceQuery: /src/,
-            // })
             config.module.rules.push({
                 test: /\.svg$/,
                 issuer: {
@@ -83,12 +66,13 @@ module.exports = (phase, { defaultConfig }) => {
             return config
         },
     }
+
+    const config = withMDX({ ...nextConfig })
+
+
     if (phase === PHASE_DEVELOPMENT_SERVER) {
-        return {
-            ...nextConfig
-            /* development only config options here */
-        }
+        return config
     }
 
-    return { ...nextConfig }
+    return config
 }

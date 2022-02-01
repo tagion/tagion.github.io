@@ -28,19 +28,16 @@ const Hero = () => {
 						/>
 					</Styled.Title>
 					<p className='mb-3 mb-md-5 fw-bold'>
-						Tagion is designed as an independent monetary system to serve as an{' '}
-						<mark>efficient medium of exchange</mark>, a <mark>convenient unit of account</mark>, and a{' '}
-						<mark>reliable store of value</mark>
+						Tagion is a decentralized non-political monetary system, used and governed openly as a common
+						good.
 					</p>
 					<Styled.Link isExternal target='_blank' href='https://google.com'>
-						<Button style={{ minWidth: 220 }} className='me-3' withIcon>
-							GitHub
+						<Button style={{ minWidth: 220 }} className='me-3'>
+							Say Hi
 						</Button>
 					</Styled.Link>
 					<Styled.Link isExternal target='_blank' href='https://google.com'>
-						<Button style={{ minWidth: 220 }} withIcon>
-							TechPaper
-						</Button>
+						<Button style={{ minWidth: 220 }}>Read Tech Paper</Button>
 					</Styled.Link>
 				</Col>
 				<Styled.Scene>

@@ -7,4 +7,5 @@ export interface Props {
 	description?: string;
 	icon: React.ReactElement;
 	className?: string;
+	style?: React.CSSProperties;
 }

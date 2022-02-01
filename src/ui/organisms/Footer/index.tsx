@@ -28,19 +28,19 @@ const Footer = () => {
 						<Link href='/privacy-policy' className='mb-2 mb-lg-0 d-block d-lg-inline'>
 							Privacy Policy
 						</Link>
-						<Link href='https://google.com' isExternal target='_blank' className='d-block d-lg-inline'>
+						<Link href='/terms-of-use' className='d-block d-lg-inline'>
 							Terms of Use
 						</Link>
 					</Styled.Paragraph>
 				</Col>
 				<Col xs={{ span: 3, offset: 3 }} lg={{ order: 3, span: 2 }}>
 					<Paragraph style={{ whiteSpace: 'nowrap' }}>
-						<Link href='https://github.com' isExternal withIcon target='_blank'>
+						<Link href='https://github.com/tagion' isExternal withIcon target='_blank'>
 							GitHub
 						</Link>
 					</Paragraph>
 					<Paragraph className='mb-0' style={{ whiteSpace: 'nowrap' }}>
-						<Link href='https://github.com' isExternal withIcon target='_blank'>
+						<Link href='https://tagion.com/tagion-tech-paper.pdf' isExternal withIcon target='_blank'>
 							TechPaper
 						</Link>
 					</Paragraph>

@@ -8,13 +8,13 @@
 		]
 	},
 	"welcome": {
-		"title": "Welcome to the Future of Money",
+		"title": "Welcome to The Future of Money",
 		"children": [
 			{
-				"content": "Global real-time connections among people, devices, and businesses make up the new type of borderless network economy. Tagion is money designed for this new economy."
+				"content": "We believe the financial system should serve its purpose in aiding the economy but not be a source of inequality. Tagion is the embodiment of a money system based on trust, equality, and freedom."
 			},
 			{
-				"content": "We are convinced that the power of money should be used to benefit society rather than single individuals or institutions. Tagion provides borderless access to financial services, finally making banking inclusive and fostering every type of innovation worldwide."
+				"content": "With Tagion, people worldwide can trade goods, services, and digital assets without the need of middlemen such as banks and credit card companies. By enabling every person in the world to participate in the global economy directly, immediately, and without permission, Tagion is a force for positive change and progress for humankind."
 			}
 		]
 	},
@@ -22,20 +22,34 @@
 		"title": "Roadmap",
 		"children": [
 			{
-				"title": "α-Version of Gossip Protocol",
-				"children": [{ "content": "Release" }, { "content": "Oct, 2018" }]
+				"title": "Ideation & Start Work",
+				"children": [{ "content": "Project Tagion formally started" }, { "content": "July, 2017" }]
 			},
 			{
-				"title": "α-Version of DART",
-				"children": [{ "content": "Release" }, { "content": "Apr, 2019" }]
+				"title": "Tagion Playnet",
+				"isComing": true,
+				"children": [{ "content": "Testing quality" }, { "content": "Early 2022" }]
 			},
 			{
-				"title": "β-Version of HiBON and HiBON-RPC",
-				"children": [{ "content": "Release" }, { "content": "Oct, 2019" }]
+				"title": "First Techpaper & Whitepaper",
+				"children": [{ "content": "Including core prototypes" }, { "content": "Dec, 2018" }]
 			},
 			{
-				"title": "Play Network",
-				"children": [{ "content": "The Next Big Thing" }, { "content": "Early 2022" }]
+				"title": "MainNet Live",
+				"isComing": true,
+				"children": [{ "content": "Launching the MainNet" }, { "content": "Mid 2022" }]
+			},
+			{
+				"title": "Stable Network Software",
+				"children": [
+					{ "content": "Transactions tested with 300+ users via iOS App" },
+					{ "content": "Summer, 2021" }
+				]
+			},
+			{
+				"title": " Sub-Darts / Decentralized Exchange",
+				"isComing": true,
+				"children": [{ "content": "On-chain DEX with price discovery" }, { "content": "2023" }]
 			}
 		]
 	},
@@ -43,16 +57,49 @@
 		"title": "How Tagion Works",
 		"children": [
 			{
-				"title": "Distributed Database",
-				"content": "Tagion can be viewed as a large network of computers that form one large database. This database contains all Tagion bills and handles incoming transactions."
+				"title": "Tagions",
+				"label": "owned by you",
+				"content": "Tagions are just records in the database, secured by cryptography and key pairs. Private keys are stored securely in your app, and used to verify ownership of tagions with their matching public keys, ensuring that only you can spend your funds."
 			},
 			{
-				"title": "Secure Transactions",
-				"content": "Transactions are instructions to destroy input bill, and transfer its value to output bill. Each input bill must be digitally signed by its private key."
+				"title": "Database",
+				"label": "owned by people like you",
+				"content": "Tagions are stored in a large network of computers that form one distributed database. The whole network agrees on data and the ordering of events in a trustless way. Thus, instead of one person claiming the truth, everyone can validate the data, making cheating nearly impossible."
 			},
 			{
-				"title": "User Applications",
-				"content": "When a user wants to send money, all he has to do is send the network a valid transaction via the wallet app. The money will be quickly credited to the recipient's account."
+				"title": "Applications",
+				"label": "developed for you",
+				"content": "Crypto technology may sound complex and scary, but so did the internet in its early days. Now you utilize the benefits of the internet via user-friendly apps, the same goes for Tagion. Today, you can find dedicated wallet apps to use your tagions; tomorrow, you'll use it from all sorts of apps without even noticing."
+			}
+		]
+	},
+	"tagionVsCrypto": {
+		"title": "What Makes Tagion Different From Other Crypto?",
+		"children": [
+			{
+				"title": "Modern Core Technology",
+				"content": "One of the greatest challenges of creating a decentralised currency is to find the right balance between security and performance. Tagion has a whole set of novel technical solutions to support enough transactions per second to compete with comparable systems like VISA and MasterCard without compromising security and decentralisation."
+			},
+			{
+				"title": "Democratic Governance",
+				"content": "Tagion is governed as a common resource by people like you. To encourage growth in the network and support the longevity of the platform, Tagion utilizes an incentive mechanism that rewards with tagions those who bring value to the system. While all decisions in the network are made via voting, providing everyone with a democratic voice."
+			},
+			{
+				"title": "Independent & Usable Currency",
+				"content": "To create a true alternative, a currency must be independent and usable. Independence means, it's not reliant on other currencies as USD or EUR or any other assets. While to make it usable, we need to embed the currency in the economy and regulate the supply to ensure stable pricing."
+			}
+		]
+	},
+	"tagionVsCash": {
+		"title": "The World Has Changed And So Shall We",
+		"children": [
+			{
+				"title": "In Math We Trust",
+				"content": "When you trust someone, you are sure that he will act according to your expectations. Fiat money is issued and controlled by central banks and governments, and, as we know, every system involving power, money, and status will eventually suffer from prejudice and corruption. With Tagion, you don't need to trust individuals nor institutions, but the math behind cryptography."
+			},
+			{
+				"title": "Inclusive Financial System",
+				"content": "Today, about 2.5 billion people globally have no access to traditional banking. They may not have the documents required to open a bank account, or they may not have a way to get to a bank. Meanwhile, Tagion makes banking inclusive for everyone to equally participate in the global financial system. You can send tagions from anywhere to anyone, at any time, without fear of censorship or additional fees."
 			}
 		]
 	},
@@ -63,98 +110,38 @@
 			{ "content": "We Are Permissionless|We Are Borderless" }
 		]
 	},
-	"tagionVsCrypto": {
-		"title": "Tagion vs Crypto",
-		"children": [
-			{
-				"title": "Token Supply",
-				"content": "The speculative nature of cryptocurrencies is hurting their adoption in the real economy. That is why Tagion's token supply is controlled by the algorithm, which uses internal metrics, like quantity and velocity of money in the system. Simply put, the total supply will always try to stabilize at a level accounted for adoption."
-			},
-			{
-				"title": "Scalability",
-				"content": "Tagion is governed collectively as a common resource. All decisions are made on the network via weighted voting. People who contribute more have more say in the system. Also, the network rewards all contributors, not only those who validate transactions."
-			},
-			{
-				"title": "Token Supply",
-				"content": "Innovative aBFT consensus mechanism (Hashgraph) and possibility to create own subnetwork with own dart (Sub-DART) enables sharding for scalability and real DEX with price-matching for interoperability."
-			}
-		]
-	},
-	"tagionVsCash": {
-		"title": "Tagion vs Cash",
-		"children": [
-			{
-				"title": "Cryptographic Ownership",
-				"content": "Tagion uses cryptographic signatures to ensure the user's data ownership. Each person is in full control of his money without a trusted third-party."
-			},
-			{
-				"title": "Fast Settlement",
-				"content": "Money transfers take days to settle in the legacy banking system, which is why we use intermediaries like Visa and Mastercard to pre-confirm transactions (for a fee). The final settlement in Tagion usually takes less than a minute, while the alternative to pre-confirmation (depending on your payment app) takes seconds."
-			},
-			{
-				"title": "Integrations",
-				"content": "Tagion is a digital native, which means it can be integrated directly into apps and games without the need for banks or third-party service providers"
-			},
-			{
-				"title": "Reliability",
-				"content": "Tagion database software is open source and free to use. It connects computers to form a large network that serves as a single source of truth. The data is replicated throughout the network, making it extremely accessible and nearly impossible to manipulate."
-			}
-		]
-	},
 	"faq": {
 		"title": "FAQ",
 		"children": [
 			{
-				"title": "What is Tagion?",
+				"title": "Where can I get tagions?",
 				"children": [
 					{
-						"content": "Tagion is decentralised, sustainable, and secure digital money that aims to eliminate inefficiencies in existing financial systems."
-					},
-					{
-						"content": "Uniquely designed to provide simple peer-to-peer transfer of value, Tagion empowers individuals with the most efficient and accessible digital money possible, connecting them to the global economy with minimal impact. No middlemen, almost zero fees, and no waiting. It's how digital money should feel: accessible, borderless and simple to use."
-					},
-					{
-						"content": "Tagion allows anyone with an internet connection to access financial services that are largely owned and maintained by the users."
+						"content": "Tagion’s private pre-sales are currently in progress. Our investor relations team will be happy to answer any questions about investing in Tagion at ir@tagion.com."
 					}
 				]
 			},
 			{
-				"title": "What problem does Tagion solve?",
+				"title": "When can I use tagions?",
 				"children": [
 					{
-						"content": "Tagion is decentralised, sustainable, and secure digital money that aims to eliminate inefficiencies in existing financial systems."
+						"content": "The Tagion system is currently undergoing rigorous testing and is set to be released later in the year, once the system meets the high demands for security and quality. Once released, Tagion will gradually be made available for use for things such as payments and easy cross-border money transfers."
 					}
 				]
 			},
 			{
-				"title": "What is the Hashgraph consensus mechanism?",
+				"title": "How can I become a part of Tagion?",
 				"children": [
 					{
-						"content": "Tagion is decentralised, sustainable, and secure digital money that aims to eliminate inefficiencies in existing financial systems."
+						"content": "Tagion is still in its early days, so you have a chance to help us build and become a valuable member of our growing community, with a say in the future development of Tagion. Remember - it’s yours as much as it’s ours."
 					}
 				]
 			},
 			{
-				"title": "Where can I get Tagions?",
+				"title": "Where can I learn more about the technology behind it?",
 				"children": [
 					{
-						"content": "Tagion is decentralised, sustainable, and secure digital money that aims to eliminate inefficiencies in existing financial systems."
-					}
-				]
-			},
-			{
-				"title": "Where can I keep my Tagions?",
-				"children": [
-					{
-						"content": "Tagion is decentralised, sustainable, and secure digital money that aims to eliminate inefficiencies in existing financial systems."
-					}
-				]
-			},
-			{
-				"title": "How can I stay informed on all technical updates and discussions?",
-				"children": [
-					{
-						"content": "Tagion is decentralised, sustainable, and secure digital money that aims to eliminate inefficiencies in existing financial systems."
+						"content": "You can find all the technical information in the Tagion Technical Paper. Join our friendly community on various social media platforms to learn about Tagion firsthand!"
 					}
 				]
 			}
@@ -165,20 +152,8 @@
 		"children": [
 			{
 				"title": "Telegram",
-				"label": "Discussions",
-				"content": "Join the like-minded",
-				"url": "http://google.com"
-			},
-			{
-				"title": "Twitter",
-				"label": "Announcements",
-				"content": "Follow the latest news",
-				"url": "http://google.com"
-			},
-			{
-				"title": "Facebook",
-				"label": "Enlightenments",
-				"content": "Follow the latest news",
+				"label": "Conversations",
+				"content": "Join the tribe",
 				"url": "http://google.com"
 			},
 			{
@@ -188,9 +163,15 @@
 				"url": "http://google.com"
 			},
 			{
-				"title": "Reddit",
-				"label": "Entertainment",
-				"content": "Share your favorite memes",
+				"title": "Facebook",
+				"label": "Announcements",
+				"content": "Follow the latest news",
+				"url": "http://google.com"
+			},
+			{
+				"title": "Twitter",
+				"label": "Discussions",
+				"content": "Share your opinion",
 				"url": "http://google.com"
 			}
 		]

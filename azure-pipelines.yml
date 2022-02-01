@@ -12,9 +12,12 @@ pool:
 steps:
   - checkout: self
     submodules: true
+  - script: |
+      npm install
+      npm run build:prod
+    displayName: 'npm install and build'
   - task: AzureStaticWebApp@0
     inputs:
       app_location: '/'
-      api_location: 'api'
       output_location: '/out'
       azure_static_web_apps_api_token: $(deployment_token)

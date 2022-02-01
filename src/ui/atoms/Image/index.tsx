@@ -1,9 +1,10 @@
-import Img from 'next/image';
+// import Img from 'next/image';
 
-import { Props } from './index.model';
+// import { Props } from './index.model';
 
-const Image: React.FunctionComponent<Props> = (props) => {
-	return <Img {...props} src={props.src || ''} />;
-};
+// const Image: React.FunctionComponent<Props> = (props) => {
+// 	return <Img {...props} src={props.src || ''} />;
+// };
 
-export { Image };
+// export { Image };
+export {};

@@ -1,4 +1,4 @@
-export { Image } from './Image';
+// export { Image } from './Image';
 export { Link } from './Link';
 export { Icon } from './Icon';
 export { Badge } from './Badge';

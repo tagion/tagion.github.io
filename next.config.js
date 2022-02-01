@@ -26,6 +26,9 @@ module.exports = (phase, { defaultConfig }) => {
         sassOptions: {
             includePaths: [path.join(__dirname, '/lib/scss')],
         },
+        images: {
+            static: true,
+        },
         compress: false,
         poweredByHeader: false,
         generateEtags: true,

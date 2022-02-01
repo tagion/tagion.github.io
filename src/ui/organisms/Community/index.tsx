@@ -7,6 +7,8 @@ import { Styled } from './index.styled';
 import cnt from 'lib/content/index.json';
 import TgIcon from 'lib/img/telegram.svg';
 import FbIcon from 'lib/img/facebook.svg';
+import YtIcon from 'lib/img/youtube.svg';
+import TwIcon from 'lib/img/twitter.svg';
 
 const content = cnt.community;
 
@@ -21,7 +23,7 @@ const Community = (props) => {
 						title={content.children[0].title}
 						label={content.children[0].label}
 						description={content.children[0].content}
-						icon={<FbIcon />}
+						icon={<TgIcon />}
 						className='mb-2 mb-lg-4'
 						style={{ height: 155 }}
 					/>
@@ -30,7 +32,7 @@ const Community = (props) => {
 						title={content.children[1].title}
 						label={content.children[1].label}
 						description={content.children[1].content}
-						icon={<FbIcon />}
+						icon={<YtIcon />}
 						className='mb-2'
 						style={{ height: 155 }}
 					/>
@@ -50,7 +52,7 @@ const Community = (props) => {
 						title={content.children[3].title}
 						label={content.children[3].label}
 						description={content.children[3].content}
-						icon={<FbIcon />}
+						icon={<TwIcon />}
 						style={{ height: 155 }}
 					/>
 				</Col>

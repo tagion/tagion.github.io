@@ -31,12 +31,12 @@ const Hero = () => {
 						Tagion is a decentralized non-political monetary system, used and governed openly as a common
 						good.
 					</p>
-					<Styled.Link isExternal target='_blank' href='https://google.com'>
+					<Styled.Link isExternal target='_blank' href='https://t.me/tagionChat'>
 						<Button style={{ minWidth: 220 }} className='me-3'>
 							Say Hi
 						</Button>
 					</Styled.Link>
-					<Styled.Link isExternal target='_blank' href='https://google.com'>
+					<Styled.Link isExternal target='_blank' href='https://tagion.com/tagion-tech-paper.pdf'>
 						<Button style={{ minWidth: 220 }}>Read Tech Paper</Button>
 					</Styled.Link>
 				</Col>

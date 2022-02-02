@@ -23,15 +23,22 @@ const Styled = {
 			}
 		}
 
-		.offset-lg-3 {
-			margin-left: 16% !important;
-
+		.offset-lg-1,
+		.offset-lg-2 {
 			@media (max-width: ${SCREEN_SIZES.desktop}px) {
 				margin-left: 0 !important;
 			}
 		}
 
-		.row:last-child .offset-lg-3 .card:before {
+		.offset-lg-1 {
+			margin-left: 5.333333%;
+		}
+
+		.offset-lg-2 {
+			margin-left: 10.666667%;
+		}
+
+		.col-lg-4:last-child .card:before {
 			display: none;
 		}
 	`,

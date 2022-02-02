@@ -5,3 +5,6 @@ out
 
 # next.js
 build
+
+# custom
+.env

@@ -26,18 +26,8 @@
 				"children": [{ "content": "Project Tagion formally started" }, { "content": "July, 2017" }]
 			},
 			{
-				"title": "Tagion Playnet",
-				"isComing": true,
-				"children": [{ "content": "Testing quality" }, { "content": "Early 2022" }]
-			},
-			{
 				"title": "First Techpaper & Whitepaper",
 				"children": [{ "content": "Including core prototypes" }, { "content": "Dec, 2018" }]
-			},
-			{
-				"title": "MainNet Live",
-				"isComing": true,
-				"children": [{ "content": "Launching the MainNet" }, { "content": "Mid 2022" }]
 			},
 			{
 				"title": "Stable Network Software",
@@ -45,6 +35,16 @@
 					{ "content": "Transactions tested with 300+ users via iOS App" },
 					{ "content": "Summer, 2021" }
 				]
+			},
+			{
+				"title": "Tagion Playnet",
+				"isComing": true,
+				"children": [{ "content": "Testing quality" }, { "content": "Early 2022" }]
+			},
+			{
+				"title": "MainNet Live",
+				"isComing": true,
+				"children": [{ "content": "Launching the MainNet" }, { "content": "Mid 2022" }]
 			},
 			{
 				"title": " Sub-Darts / Decentralized Exchange",
@@ -154,25 +154,25 @@
 				"title": "Telegram",
 				"label": "Conversations",
 				"content": "Join the tribe",
-				"url": "http://google.com"
+				"url": "https://t.me/tagionChat"
 			},
 			{
 				"title": "Youtube",
 				"label": "Enlightenments",
 				"content": "Learn more about Tagion",
-				"url": "http://google.com"
+				"url": "https://www.youtube.com/channel/UC0tJDjdhtGIdmK-3UJYaPhg"
 			},
 			{
 				"title": "Facebook",
 				"label": "Announcements",
 				"content": "Follow the latest news",
-				"url": "http://google.com"
+				"url": "https://www.facebook.com/TagionOfficial/?ref=page_internal"
 			},
 			{
 				"title": "Twitter",
 				"label": "Discussions",
 				"content": "Share your opinion",
-				"url": "http://google.com"
+				"url": "https://twitter.com/TagionOfficial"
 			}
 		]
 	}

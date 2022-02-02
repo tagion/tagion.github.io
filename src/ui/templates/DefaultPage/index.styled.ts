@@ -8,6 +8,7 @@ const Styled = {
 		...rest,
 	}))`
 		min-height: 100vh;
+		min-width: 375px;
 	`,
 	Main: styled.main.attrs(() => ({ id: 'main' }))`
 		flex: 1 0 auto;

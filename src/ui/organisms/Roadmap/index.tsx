@@ -5,17 +5,32 @@ import { Styled } from './index.styled';
 import { Props, Milestone } from './index.model';
 
 const Roadmap: React.FunctionComponent<Props> = ({ title, items, id = '' }) => {
-	const groupedItems = items.reduce((result = [], _current, index, array = []) => {
-		if (!Boolean(index % 2)) {
-			result.push(array.slice(index, index + 2));
-		}
+	const renderMilestones = items.map(({ title, date, description, isComing }, i) => {
+			let order: number = 0;
+			let offset: number = 0;
 
-		return result;
-	}, [] as Milestone[][]); // grouped by 2 Milestone
+			if (i === 0) {
+				order = 0;
+				offset = 0;
+			} else if (i === 1) {
+				order = 2;
+				offset = 1;
+			} else if (i === 2) {
+				order = 4;
+				offset = 2;
+			} else if (i === 3) {
+				order = 1;
+				offset = 1;
+			} else if (i === 4) {
+				order = 3;
+				offset = 1;
+			} else if (i === 5) {
+				order = 5;
+				offset = 1;
+			}
 
-	const renderItems = groupedItems.map((items, index) => {
-			const renderMilestones = items.map(({ title, date, description, isComing }, i) => (
-				<Col lg={{ span: 4, offset: index + i }} key={uuid()} className='mb-4'>
+			return (
+				<Col lg={{ span: 5, order, offset }} key={uuid()} className='mb-4'>
 					<Styled.Card variant={isComing ? 'dashed' : 'primary'} className='h-100'>
 						<h4>{title}</h4>
 						<p className='mb-0 mt-auto'>{description}</p>
@@ -24,9 +39,7 @@ const Roadmap: React.FunctionComponent<Props> = ({ title, items, id = '' }) => {
 						</p>
 					</Styled.Card>
 				</Col>
-			));
-
-			return <Row key={uuid()}>{renderMilestones}</Row>;
+			);
 		}),
 		renderBG = Array.from({ length: 50 }).map((_item, i) => (
 			<div className='dash' style={{ left: `${i * 3}rem`, marginLeft: '-.8rem' }} key={uuid()}></div>
@@ -37,7 +50,7 @@ const Roadmap: React.FunctionComponent<Props> = ({ title, items, id = '' }) => {
 			<Styled.Title>{title}</Styled.Title>
 			<Styled.Container>
 				{renderBG}
-				{renderItems}
+				<Row>{renderMilestones}</Row>
 			</Styled.Container>
 		</Container>
 	);

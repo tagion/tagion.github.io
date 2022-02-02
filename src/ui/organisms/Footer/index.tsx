@@ -42,7 +42,7 @@ const Footer = () => {
 						</Link>
 					</Paragraph>
 					<Paragraph className='mb-0' style={{ whiteSpace: 'nowrap' }}>
-						<Link href='https://tagion.com/tagion-tech-paper.pdf' isExternal withIcon target='_blank'>
+						<Link href='/resources/tech-paper.pdf' isExternal withIcon target='_blank'>
 							TechPaper
 						</Link>
 					</Paragraph>

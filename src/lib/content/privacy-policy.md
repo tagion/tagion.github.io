@@ -2,7 +2,7 @@
 
 When you entrust us with your personal data, we promise in return to process this in a secure and transparent manner. We would appreciate if you would take the time to read through our privacy policy, so you are informed about how we handle your personal data.
 
-The purpose of this privacy policy is to explain how I25S collects and processes your personal data when you interact with our website. The privacy policy applies to tagion.org, but please do also be aware and check out how we make use of data collected in cookies when you visit tagion.org in our cookie policy at [Cookie Policy page](/meta/cookie-policy.md).
+The purpose of this privacy policy is to explain how I25S collects and processes your personal data when you interact with our website. The privacy policy applies to tagion.org, but please do also be aware and check out how we make use of data collected in cookies when you visit tagion.org in our cookie policy at [Cookie Policy page](/cookie-policy).
 
 At I25S we receive data about all visitors on tagion.org.
 
@@ -19,7 +19,7 @@ We collect and process your personal information when you are using/requesting o
 The necessary personal data is processed for the following purposes:
 
 Delivery of service: We collect the data to enable us to deliver a digital service requested by you.
-Optimization and development: We use the data to optimize and develop the user experience of tagion.org and the services we provide. For further details, see our cookie policy at [Cookie Policy page](/meta/cookie-policy.md).
+Optimization and development: We use the data to optimize and develop the user experience of tagion.org and the services we provide. For further details, see our cookie policy at [Cookie Policy page](/cookie-policy).
 Statistics: We use the data to build usage statistics of our website, helping us to improve it.
 We process your personal data in order to communicate with you and to respond to your requests (e.g. providing service to you as a user and giving you the best possible service).
 We process your personal data in order to send you marketing material, newsletters, company announcements and other information from I25S, which you have consented to receive and so that you receive marketing material and information about us via social media (for example Facebook and LinkedIn), and personal data is also used to identify other persons who may be interested in I25S.
@@ -82,10 +82,10 @@ These rights may be subject to conditions or restrictions. For example, you may 
 
 #### 8. Contact I25S Regarding The Processing Of Personal Data
 
-If you wish to contact I25S regarding our processing of your personal data, please write to [info@tagion.org](mailto:info@tagion.org).
+If you wish to contact I25S regarding our processing of your personal data, please write to [info@tagion.com](mailto:info@tagion.com).
 
 If you are unhappy with our response, you can lodge a complaint with your local data protection authority.
 
 #### 9. Changes To In Our Privacy Policy
 
-This privacy policy replaces all previous versions. It will be necessary to update and amend this policy on an ongoing basis, and we reserve the right to update and amend it. In the event of an important amendment, we will notify you at [tagion.org](/) or send an email if we deem it necessary.
+This privacy policy replaces all previous versions. It will be necessary to update and amend this policy on an ongoing basis, and we reserve the right to update and amend it. In the event of an important amendment, we will notify you at [tagion.com](/) or send an email if we deem it necessary.

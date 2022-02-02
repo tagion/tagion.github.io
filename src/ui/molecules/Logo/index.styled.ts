@@ -8,11 +8,12 @@ const Styled = {
 		height: 32px;
 
 		svg {
-			width: 100%;
-			height: 100%;
+			width: 135px;
+			height: 32px;
 		}
 
 		@media (min-width: ${SCREEN_SIZES.desktop}px) {
+			width: auto
 			height: 40px;
 		}
 	`,

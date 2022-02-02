@@ -26,7 +26,7 @@ function Application({ Component, pageProps }: AppProps) {
 		const scrollToHashHandler = (url: string) => {
 			const id = url.replace('/#', ''),
 				section = document.getElementById(id),
-				headerHeight = isMobile() ? 80 : 114,
+				headerHeight = isMobile() ? 80 : 106,
 				topOffset = section?.offsetTop;
 
 			if (topOffset) {
@@ -36,7 +36,7 @@ function Application({ Component, pageProps }: AppProps) {
 						left: 0,
 						behavior: 'smooth',
 					});
-				}, 1);
+				}, 10);
 			}
 		};
 

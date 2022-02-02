@@ -15,7 +15,7 @@ const Styled = {
 		padding-top: 82px;
 
 		@media (min-width: ${SCREEN_SIZES.desktop}px) {
-			padding-top: 114px;
+			padding-top: 106px;
 		}
 	`,
 };

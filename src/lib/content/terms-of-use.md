@@ -9,9 +9,9 @@ Websites. By using the Websites or by clicking to accept or agree to the
 Terms of Use when this option is made available to you, you accept and
 agree to be bound and abide by these Terms of Use in addition to
 
-- our [Privacy Policy](/meta/privacy-policy.md), incorporated herein by
+- our [Privacy Policy](/privacy-policy), incorporated herein by
   reference; and
-- our [Cookie Policy](/meta/cookie-policy.md), incorporated herein by
+- our [Cookie Policy](/cookie-policy), incorporated herein by
   reference.
 
 If you do not to agree to these Terms of Use or the Privacy Policy, you
@@ -108,7 +108,7 @@ Websites or any services or materials available through the Websites.
 
 If you wish to make any use of materials on the Websites other than that
 set out in this section, please address your request to:
-<info@tagion.org>.
+<info@tagion.com>.
 
 If you print, copy, modify, download or otherwise use or provide any
 other person with access to any part of the Websites in breach of the
@@ -212,7 +212,7 @@ no obligation to update such material.
 #### Information About You and Your Visits to the Websites
 
 All information we collect on this Websites is subject to our [Privacy
-Policy](/meta/privacy-policy.md). By using the Website, you consent to all
+Policy](/privacy-policy). By using the Website, you consent to all
 actions taken by us with respect to your information in compliance with
 the Privacy Policy.
 
@@ -374,4 +374,4 @@ the Websites.
 
 This Websites is operated by the I25S team. All other feedback,
 comments, requests for technical support and other communications
-relating to the Websites should be directed to: <info@tagion.org>.
+relating to the Websites should be directed to: <info@tagion.com>.

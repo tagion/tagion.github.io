@@ -38,7 +38,7 @@ const Styled = {
 			margin-left: 10.666667%;
 		}
 
-		.col-lg-4:last-child .card:before {
+		.col-lg-5:last-child .card:before {
 			display: none;
 		}
 	`,

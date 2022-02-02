@@ -15,16 +15,19 @@ const FeatureCards = ({ ...rest }) => {
 	const features: IFeatureCard[] = [
 		{
 			title: content.howItWorks.children[0].title,
+			label: content.howItWorks.children[0].label,
 			content: content.howItWorks.children[0].content,
 			icon: <MedalIcon className='mx-auto' style={{ maxHeight: 200 }} />,
 		},
 		{
 			title: content.howItWorks.children[1].title,
+			label: content.howItWorks.children[1].label,
 			content: content.howItWorks.children[1].content,
 			icon: <DbIcon className='mx-auto' style={{ maxHeight: 200 }} />,
 		},
 		{
 			title: content.howItWorks.children[2].title,
+			label: content.howItWorks.children[2].label,
 			content: content.howItWorks.children[2].content,
 			icon: <PhoneIcon className='mx-auto' style={{ maxHeight: 200 }} />,
 		},

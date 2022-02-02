@@ -117,7 +117,7 @@
 				"title": "Where can I get tagions?",
 				"children": [
 					{
-						"content": "Tagion’s private pre-sales are currently in progress. Our investor relations team will be happy to answer any questions about investing in Tagion at ir@tagion.com."
+						"content": "Tagion’s private pre-sales are currently in progress. Our investor relations team will be happy to answer any questions about investing in Tagion at <a href='mailto:ir@tagion.com'>ir@tagion.com</a>."
 					}
 				]
 			},
@@ -141,7 +141,7 @@
 				"title": "Where can I learn more about the technology behind it?",
 				"children": [
 					{
-						"content": "You can find all the technical information in the Tagion Technical Paper. Join our friendly community on various social media platforms to learn about Tagion firsthand!"
+						"content": "You can find all the technical information in the <a href='/resources/tech-paper.pdf' target='_blank'>Tagion Technical Paper</a>. Join our friendly community on various social media platforms to learn about Tagion firsthand!"
 					}
 				]
 			}

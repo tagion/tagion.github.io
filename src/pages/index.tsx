@@ -59,7 +59,7 @@ const Index = () => {
 
 	const faqItems = faqContent.children.map(({ title, children }) => ({
 			title,
-			content: children.map((i) => <p key={uuid()}>{i.content}</p>),
+			content: children.map((i) => <p key={uuid()} dangerouslySetInnerHTML={{ __html: i.content }} />),
 		})),
 		tagionVsCryptoItems = tagionVsCryptoContent.children.map(({ title, content }) => ({
 			title,

@@ -30,7 +30,9 @@ export default class CustomDocument extends Document {
 	render() {
 		return (
 			<Html>
-				<Head />
+				<Head>
+					<script src='https://cdn.usefathom.com/script.js' data-site='PXTICOGF' defer></script>
+				</Head>
 				<body>
 					<Main />
 					<NextScript />

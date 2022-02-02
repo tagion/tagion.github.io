@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { Link } from 'ui/atoms';
 
@@ -21,7 +21,7 @@ const Menu: React.FunctionComponent<Props> = ({ withSpec = false, closeMenu }) =
 			</Styled.Nav>
 			{withSpec && (
 				<Styled.SpecContainer>
-					<Link href='https://tagion.com/tagion-tech-paper.pdf' isExternal withIcon target='_blank'>
+					<Link href='/resources/tech-paper.pdf' isExternal withIcon target='_blank'>
 						TechPaper
 					</Link>
 				</Styled.SpecContainer>

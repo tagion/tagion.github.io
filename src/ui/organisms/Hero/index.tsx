@@ -36,7 +36,7 @@ const Hero = () => {
 							Say Hi
 						</Button>
 					</Styled.Link>
-					<Styled.Link isExternal target='_blank' href='https://tagion.com/tagion-tech-paper.pdf'>
+					<Styled.Link isExternal target='_blank' href='/resources/tech-paper.pdf'>
 						<Button style={{ minWidth: 220 }}>Read Tech Paper</Button>
 					</Styled.Link>
 				</Col>

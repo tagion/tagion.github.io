@@ -25,7 +25,6 @@ const Community = (props) => {
 						description={content.children[0].content}
 						icon={<TgIcon />}
 						className='mb-2 mb-lg-4'
-						style={{ height: 155 }}
 					/>
 					<SocialItem
 						url={content.children[1].url}
@@ -34,7 +33,6 @@ const Community = (props) => {
 						description={content.children[1].content}
 						icon={<YtIcon />}
 						className='mb-2'
-						style={{ height: 155 }}
 					/>
 				</Col>
 				<Col lg={6} className='px-lg-3'>
@@ -45,7 +43,6 @@ const Community = (props) => {
 						description={content.children[2].content}
 						icon={<FbIcon />}
 						className='mb-2 mb-lg-4'
-						style={{ height: 155 }}
 					/>
 					<SocialItem
 						url={content.children[3].url}
@@ -53,7 +50,6 @@ const Community = (props) => {
 						label={content.children[3].label}
 						description={content.children[3].content}
 						icon={<TwIcon />}
-						style={{ height: 155 }}
 					/>
 				</Col>
 			</Row>

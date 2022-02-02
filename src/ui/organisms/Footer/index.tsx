@@ -22,7 +22,9 @@ const Footer = () => {
 				</Col>
 				<Col xs={{ span: 5 }} lg={{ order: 2, span: 3, offset: 1 }}>
 					<Paragraph>
-						<Link href='#'>Contact Us</Link>
+						<Link href='mailto:ir@tagion.com' isExternal target='_blank'>
+							Contact Us
+						</Link>
 					</Paragraph>
 					<Styled.Paragraph>
 						<Link href='/privacy-policy' className='mb-2 mb-lg-0 d-block d-lg-inline'>

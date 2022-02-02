@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { SCREEN_SIZES } from 'lib/constants';
+
 import { Card } from 'ui/molecules';
 import { Badge, Link } from 'ui/atoms';
 
@@ -7,9 +9,14 @@ const Styled = {
 	Card: styled(Card).attrs((props, ...rest) => ({
 		...props,
 		...rest,
-		className: 'flex-row p-45 align-items-center',
+		className: 'flex-row p-3 p-lg-45 align-items-center',
 	}))`
 		background: transparent;
+		height: 105px;
+
+		@media (min-width: ${SCREEN_SIZES.desktop}px) {
+			height: 155px;
+		}
 	`,
 	Link: styled(Link)`
 		&:hover {

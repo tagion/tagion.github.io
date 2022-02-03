@@ -11,6 +11,7 @@ const Paragraph = ({ children, ...rest }) => (
 		{children}
 	</p>
 );
+
 const Footer = () => {
 	return (
 		<Styled.Container>

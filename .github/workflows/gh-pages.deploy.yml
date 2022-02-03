@@ -1,4 +1,4 @@
-name: Deploy Tagion to github pages.
+name: Deploy to Github pages.
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
+        node-version: [16.x]
 
     steps:
       - name: Get files
@@ -29,5 +29,5 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          branch: gh-pages
-          folder: out
+          branch: master
+          folder: ./out

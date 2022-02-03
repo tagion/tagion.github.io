@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Deploy Tagion to github pages.
 
 on:
   push:
@@ -29,5 +29,5 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          branch: master
+          branch: gh-pages
           folder: out

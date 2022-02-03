@@ -2,6 +2,7 @@
 node_modules
 certificates
 out
+.vscode
 
 # next.js
 build

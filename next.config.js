@@ -14,10 +14,10 @@ module.exports = (phase, { defaultConfig }) => {
      */
 
     const nextConfig = {
+        ...defaultConfig,
         /* config options here */
         env: {
-            customKey: 'my-value',
-            test: process.env.TEST || ''
+            // customKey: 'my-value', pass custom runtime env variables
         },
         // basePath: '/path', // base site path ex: 'example.com/path'
         distDir: 'build',
@@ -45,7 +45,7 @@ module.exports = (phase, { defaultConfig }) => {
         },
         publicRuntimeConfig: {
             // Will be available on both server and client
-            // staticFolder: '/static',
+            // staticFolder: '/public',
         },
         eslint: {
             // Warning: This allows production builds to successfully complete even if
@@ -64,8 +64,6 @@ module.exports = (phase, { defaultConfig }) => {
 
             });
 
-
-            // Important: return the modified config
             return config
         },
     }

@@ -41,7 +41,6 @@ function Application({ Component, pageProps }: AppProps) {
 		};
 
 		router.events.on('hashChangeComplete', scrollToHashHandler);
-		console.log('Application running...');
 
 		return () => {
 			router.events.off('hashChangeComplete', scrollToHashHandler);

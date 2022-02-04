@@ -6,7 +6,7 @@ const fs = require('fs');
 const nextConfig = require('./next.config');
 
 const dev = process.env.NODE_ENV !== 'production';
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 const app = next({ dev, nextConfig });
 
 const handle = app.getRequestHandler();
@@ -24,6 +24,7 @@ app.prepare().then(() => {
         handle(req, res, parsedUrl);
     }).listen(port, (error) => {
         if (error) throw error;
+
         console.log(`> Server started on https://localhost:${port}`);
     });
 });

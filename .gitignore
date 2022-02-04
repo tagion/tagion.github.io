@@ -9,3 +9,5 @@ build
 
 # custom
 .env
+.env.development
+.env.production

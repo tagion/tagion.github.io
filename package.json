@@ -7,7 +7,7 @@
 		"dev": "next dev",
 		"build": "next build",
 		"build:prod": "next build && next export",
-		"start:dev": "next build && node server.js",
+		"start:dev": "next build && NODE_ENV=production PORT=3000 node server.js",
 		"start": "next start",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build",

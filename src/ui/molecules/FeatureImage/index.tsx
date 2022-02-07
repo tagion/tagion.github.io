@@ -1,5 +1,3 @@
-import { Container } from 'react-bootstrap';
-
 import { Styled } from './index.styled';
 
 const FeatureImage = ({ img }) => {

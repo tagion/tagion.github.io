@@ -7,9 +7,9 @@ import { Slider } from 'ui/organisms';
 import { Styled } from './index.styled';
 
 import content from 'lib/content/index.json';
-import DbIcon from 'lib/img/datacenter.svg';
-import MedalIcon from 'lib/img/medal.svg';
-import PhoneIcon from 'lib/img/phone-card.svg';
+import DbIcon from 'lib/icons/datacenter.svg';
+import MedalIcon from 'lib/icons/medal.svg';
+import PhoneIcon from 'lib/icons/phone-card.svg';
 
 const FeatureCards = ({ ...rest }) => {
 	const features: IFeatureCard[] = [

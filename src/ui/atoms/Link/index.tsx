@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import ArrowIcon from 'lib/img/arrow.svg';
+import ArrowIcon from 'lib/icons/arrow.svg';
 
 import { Styled } from './index.styled';
 import { Props } from './index.model';

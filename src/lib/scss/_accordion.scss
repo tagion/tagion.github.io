@@ -8,8 +8,18 @@
 		border-bottom: 0;
 	}
 
+	&:first-child {
+		.accordion-button {
+			padding-top: 0;
+		}
+	}
+
 	&:last-child {
 		border-bottom: 0;
+		
+		.accordion-button {
+			padding-bottom: 0;
+		}
 	}
 }
 

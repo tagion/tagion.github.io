@@ -15,13 +15,16 @@ const Styled = {
 			display: none;
 		}
 	`,
-	Col: styled(Col).attrs(({ className = '', ...rest }) => ({ className: `p-425 p-lg-5`, ...rest }))`
+	Col: styled(Col).attrs(({ className = '', ...rest }) => ({
+		className: `d-flex justify-content-center align-items-center p-425 p-lg-5`,
+		...rest,
+	}))`
 		@media (max-width: ${SCREEN_SIZES.desktop}px) {
 			border: 0 !important;
 			order: 0;
 		}
 	`,
-	TextContainer: styled(Col).attrs(({ ...rest }) => ({ className: ``, ...rest }))`
+	TextContainer: styled(Col).attrs(({ ...rest }) => ({ className: `pt-md-4 pt-lg-0`, ...rest }))`
 		@media (max-width: ${SCREEN_SIZES.desktop}px) {
 			order: 1;
 		}

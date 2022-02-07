@@ -6,3 +6,4 @@ export { FeatureImage } from './FeatureImage';
 export { Ticker } from './Ticker';
 export { SocialItem } from './SocialItem';
 export { Burger } from './Burger';
+export { GlitchImage } from './GlitchImage';

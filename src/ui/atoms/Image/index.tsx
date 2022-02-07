@@ -1,10 +1,7 @@
-// import Img from 'next/image';
+import { Props } from './index.model';
 
-// import { Props } from './index.model';
+const Image: React.FunctionComponent<Props> = ({ src = '', ...rest }) => {
+	return <img src={src} {...rest} />;
+};
 
-// const Image: React.FunctionComponent<Props> = (props) => {
-// 	return <Img {...props} src={props.src || ''} />;
-// };
-
-// export { Image };
-export {};
+export { Image };

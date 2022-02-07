@@ -5,7 +5,7 @@ import { Link } from 'ui/atoms';
 
 import { SCREEN_SIZES } from 'lib/constants';
 
-import LogoIcon from 'lib/img/logo_icon.svg';
+import LogoIcon from 'lib/icons/logo_icon.svg';
 
 const Styled = {
 	Copyright: styled.p.attrs(() => ({ className: `mb-0` }))`

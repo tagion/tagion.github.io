@@ -1,7 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
 
-import { FeatureImage } from 'ui/molecules';
-
 import { Styled } from './index.styled';
 import { Props } from './index.model';
 
@@ -19,20 +17,16 @@ const Features: React.FunctionComponent<Props> = ({ imageIsRight = false, title 
 			<Styled.Title>{title}</Styled.Title>
 			<Row className='m-0'>
 				{image && !imageIsRight && (
-					<ImageContainer className='border-primary border-end'>
-						<FeatureImage img={<>{image}</>} />
-					</ImageContainer>
+					<ImageContainer className='border-primary border-end'>{image}</ImageContainer>
 				)}
 				<Styled.TextContainer md={8}>
-					<Container className='p-3 py-lg-6 px-lg-5'>
+					<Container className='pb-425 py-lg-6 px-lg-5'>
 						<Styled.DesktopTitle>{title}</Styled.DesktopTitle>
 						{children}
 					</Container>
 				</Styled.TextContainer>
 				{image && imageIsRight && (
-					<ImageContainer className='border-primary border-start'>
-						<FeatureImage img={image} />
-					</ImageContainer>
+					<ImageContainer className='border-primary border-start'>{image}</ImageContainer>
 				)}
 			</Row>
 		</Container>

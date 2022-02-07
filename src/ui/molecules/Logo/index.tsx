@@ -1,6 +1,6 @@
 import { Link } from 'ui/atoms';
 
-import LogoIcon from 'lib/img/logo_text.svg';
+import LogoIcon from 'lib/icons/logo_text.svg';
 
 import { Styled } from './index.styled';
 

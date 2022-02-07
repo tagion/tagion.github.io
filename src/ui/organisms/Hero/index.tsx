@@ -1,13 +1,12 @@
-import { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Typewriter from 'typewriter-effect';
 
-import { Button, Link } from 'ui/atoms';
+import { Button } from 'ui/atoms';
+import { GlitchImage } from 'ui/molecules';
 
 import { Styled } from './index.styled';
 
 import content from 'lib/content/index.json';
-import PlanetIllustration from 'lib/img/phone-planet.svg';
 
 const Hero = () => {
 	const typingStrings = content.hero.children.map(({ content }) => content);
@@ -42,7 +41,7 @@ const Hero = () => {
 				</Col>
 				<Styled.Scene>
 					<Styled.Background />
-					<PlanetIllustration className='position-relative' />
+					<GlitchImage imageSrc='/images/phone-planet.svg' />
 				</Styled.Scene>
 			</Row>
 		</Container>

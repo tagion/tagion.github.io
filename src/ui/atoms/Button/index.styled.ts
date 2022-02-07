@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
 
-import ArrowIcon from 'lib/img/arrow.svg';
+import ArrowIcon from 'lib/icons/arrow.svg';
 
 const Styled = {
 	Button: styled(Button).attrs(({ className = '', theme = '', ...rest }) => ({

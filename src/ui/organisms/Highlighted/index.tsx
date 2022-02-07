@@ -5,7 +5,7 @@ import { Link } from 'ui/atoms';
 import { Styled } from './index.styled';
 import { Props } from './index.model';
 
-import ArrowLeft from 'lib/img/arrow-left.svg';
+import ArrowLeft from 'lib/icons/arrow-left.svg';
 
 const Highlighted: React.FunctionComponent<Props> = ({ title, children, backLink = null, ...rest }) => {
 	return (

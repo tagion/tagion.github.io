@@ -5,10 +5,10 @@ import { SocialItem } from 'ui/molecules';
 import { Styled } from './index.styled';
 
 import cnt from 'lib/content/index.json';
-import TgIcon from 'lib/img/telegram.svg';
-import FbIcon from 'lib/img/facebook.svg';
-import YtIcon from 'lib/img/youtube.svg';
-import TwIcon from 'lib/img/twitter.svg';
+import TgIcon from 'lib/icons/telegram.svg';
+import FbIcon from 'lib/icons/facebook.svg';
+import YtIcon from 'lib/icons/youtube.svg';
+import TwIcon from 'lib/icons/twitter.svg';
 
 const content = cnt.community;
 

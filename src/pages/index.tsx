@@ -1,15 +1,14 @@
 import { useEffect, useState } from 'react';
 import { v4 as uuid } from 'uuid';
-import { Container } from 'react-bootstrap';
 
 import { Hero, Highlighted, Roadmap, FeatureCards, Features, Accordion, Community } from 'ui/organisms';
-import { Ticker } from 'ui/molecules';
+import { Ticker, GlitchImage } from 'ui/molecules';
 
 import { isMobile } from 'lib/utils';
 
 import content from 'lib/content/index.json';
-import ComputerIcon from 'lib/img/computer.svg';
-import BankIcon from 'lib/img/bank.svg';
+import ComputerIcon from 'lib/icons/computer.svg';
+import BankIcon from 'lib/icons/bank.svg';
 
 const tagionVsCryptoContent = content.tagionVsCrypto,
 	tagionVsCash = content.tagionVsCash,

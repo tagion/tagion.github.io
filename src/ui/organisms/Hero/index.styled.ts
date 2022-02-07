@@ -63,7 +63,7 @@ const Styled = {
 		}
 	`,
 	Scene: styled(Col).attrs(() => ({
-		className: `position-relative border-primary border-end overflow-hidden px-6 py-5`,
+		className: `position-relative align-items-center border-primary border-end overflow-hidden px-6 py-5`,
 	}))`
 		display: none;
 		perspective: 700px;

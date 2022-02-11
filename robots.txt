@@ -3,7 +3,6 @@ Sitemap: https://tagion.com/sitemap.xml
 User-agent: *
 Allow: /*
 
-Disallow: /_next/*
 Disallow: /cookie-policy
 Disallow: /privacy-policy
 Disallow: /terms-of-use

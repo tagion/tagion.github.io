@@ -7,9 +7,12 @@ import { AQUA_ISLAND, DEEP_TURQUOISE } from 'lib/constants/colors';
 import { SCREEN_SIZES } from 'lib/constants';
 
 const Styled = {
-	Title: styled.h1`
+	Title: styled.span`
+		display: block;
+		font-family: 'Space Grotesk', sans-serif;
 		min-height: 82px;
 		font-size: 2.5rem;
+		font-weight: bold;
 		line-height: 1;
 		margin-bottom: 1.5rem;
 		color: ${AQUA_ISLAND};

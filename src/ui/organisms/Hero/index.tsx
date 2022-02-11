@@ -1,6 +1,8 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Typewriter from 'typewriter-effect';
 
+import { BG_COLOR } from 'lib/constants/colors';
+
 import { Button } from 'ui/atoms';
 import { GlitchImage } from 'ui/molecules';
 
@@ -15,8 +17,10 @@ const Hero = () => {
 		<Container className='overflow-hidden'>
 			<Row className='border-primary border-bottom'>
 				<Col className='px-3 py-425 px-md-5 py-md-7 border-primary border-end border-start' lg={6}>
+					<h1 style={{ color: BG_COLOR, position: 'absolute', zIndex: -1 }}>We are {typingStrings[0]}</h1>{' '}
+					{/* SEO hack */}
 					<Styled.Title>
-						We Are
+						We Are <br />
 						<Typewriter
 							options={{
 								strings: typingStrings,

@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import { SCREEN_SIZES } from 'lib/constants';
 
 const Styled = {
-	Line: styled.h2.attrs((props, ...rest) => ({ ...props, ...rest }))`
+	Line: styled.span.attrs((props, ...rest) => ({ ...props, ...rest }))`
+		font-family: 'Space Grotesk', sans-serif;
+		font-weight: bold;
 		font-size: 2.5rem;
 		line-height: 1;
 		white-space: nowrap;

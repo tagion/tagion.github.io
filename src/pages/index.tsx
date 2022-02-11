@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { v4 as uuid } from 'uuid';
 
 import { Hero, Highlighted, Roadmap, FeatureCards, Features, Accordion, Community } from 'ui/organisms';
-import { Ticker, GlitchImage } from 'ui/molecules';
+import { Ticker } from 'ui/molecules';
 
 import { isMobile } from 'lib/utils';
 

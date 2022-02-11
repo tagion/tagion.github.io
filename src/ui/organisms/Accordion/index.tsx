@@ -9,7 +9,9 @@ const Accordion: React.FunctionComponent<Props> = ({ defaultActiveKey = '0', ite
 		<BootstrapAccordion defaultActiveKey={defaultActiveKey}>
 			{items.map(({ title, content = '' }, i) => (
 				<BootstrapAccordion.Item eventKey={i.toString()} key={uuid()}>
-					<Styled.Toggler>{title}</Styled.Toggler>
+					<Styled.Toggler as={Styled.Title}>
+						<BootstrapAccordion.Button>{title}</BootstrapAccordion.Button>
+					</Styled.Toggler>
 					<BootstrapAccordion.Body>{content}</BootstrapAccordion.Body>
 				</BootstrapAccordion.Item>
 			))}

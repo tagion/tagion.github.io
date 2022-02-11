@@ -45,7 +45,7 @@ const Hero = () => {
 				</Col>
 				<Styled.Scene>
 					<Styled.Background />
-					<GlitchImage imageSrc='/images/phone-planet.svg' />
+					<GlitchImage imageSrc='/images/phone-planet.svg' imgAlt='World is glitching!' />
 				</Styled.Scene>
 			</Row>
 		</Container>

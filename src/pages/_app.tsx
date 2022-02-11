@@ -6,6 +6,7 @@ import React, { useEffect } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 import { DefaultPage, Layout } from 'ui/templates';
+import { Head } from 'ui/organisms';
 
 import { isMobile } from 'lib/utils';
 
@@ -49,6 +50,7 @@ function Application({ Component, pageProps }: AppProps) {
 
 	return (
 		<Layout>
+			<Head />
 			<GlobalStyle />
 			<ThemeProvider theme={theme}>
 				<DefaultPage>

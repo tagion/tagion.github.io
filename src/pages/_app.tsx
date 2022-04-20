@@ -6,7 +6,7 @@ import React, { useEffect } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 import { DefaultPage, Layout } from 'ui/templates';
-import { Head } from 'ui/organisms';
+import { HeadSEO } from 'ui/organisms';
 
 import { isMobile } from 'lib/utils';
 
@@ -50,7 +50,7 @@ function Application({ Component, pageProps }: AppProps) {
 
 	return (
 		<Layout>
-			<Head />
+			<HeadSEO isDefault />
 			<GlobalStyle />
 			<ThemeProvider theme={theme}>
 				<DefaultPage>
@@ -62,7 +62,7 @@ function Application({ Component, pageProps }: AppProps) {
 }
 
 export function reportWebVitals(metric) {
-	console.log(metric);
+	// console.log(metric); Page insights metrics
 }
 
 export default Application;

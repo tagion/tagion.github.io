@@ -49,7 +49,7 @@ const Highlighted: React.FunctionComponent<P> = ({
 						<S.Title>
 							{backLink && (
 								<Link href={backLink}>
-									<ArrowLeft className='mb-1 me-1' />{' '}
+									<ArrowLeft width='24px' height='24px' className='mb-1 me-1' />{' '}
 								</Link>
 							)}
 							{title}

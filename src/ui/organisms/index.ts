@@ -1,4 +1,4 @@
-export { Head } from './Head';
+export { HeadSEO } from './HeadSEO';
 export { Header } from './Header';
 export { Footer } from './Footer';
 export { Menu } from './Menu';

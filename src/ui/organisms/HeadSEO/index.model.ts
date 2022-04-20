@@ -3,4 +3,5 @@ export interface P {
 	description?: string;
 	keywords?: string;
 	author?: string;
+	isDefault?: boolean;
 }

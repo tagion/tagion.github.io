@@ -5,7 +5,7 @@ import { MDXRemote } from 'next-mdx-remote';
 import rehypeSlug from 'rehype-slug';
 import { v4 as uuid } from 'uuid';
 
-import { Highlighted } from 'ui/organisms';
+import { HeadSEO, Highlighted } from 'ui/organisms';
 import { ArticleImage, Navigation } from 'ui/molecules';
 import { Link } from 'ui/atoms';
 
@@ -20,26 +20,18 @@ const components = {
 const Post = ({ post }) => {
 	return (
 		<>
-			<Head>
-				<title>{post.title} | Tagion Blog</title>
-				<meta name='description' key='description' content={post.description} />{' '}
-				{/* shorten meta description */}
-				<meta
-					name='keywords'
-					key='keywords'
-					content='tagion, tagions, money, monetary system, decentralized, independent, community, economy, global, worldwide, non-political, common goods, fast, future, openly governed'
-				></meta>{' '}
-				{/* add keywords */}
-				<meta name='robots' content='index, follow' />
-				<meta name='author' content='Tagion' key='author' /> {/* add author */}
-				<meta property='og:title' key='og:title' content={post.title} />
-				<meta property='og:description' key='og:description' content={post.description} />{' '}
-				{/* shorten meta description */}
-				{/* <meta property="og:url" content={location.href}></meta> */}
-				{/* <link rel="canonical" href="https://blog.ethereum.org/2022/04/14/secured-no-3/"></link> */}
-				{/* <meta property="og:image" content="https://blog.ethereum.org/img/ethereum-blog-og-image.png"> */}
-				{/* add twitter/social meta */}
-			</Head>
+			<HeadSEO title={`${post.title} | Tagion Blog`} description={post.description} />
+			{/*
+			 * TODO:
+			 * Add shorten SEO description
+			 * Add SEO Keywords
+			 * Add author and date
+			 * Add links:
+			 * - <meta property="og:url" content={location.href}></meta>
+			 * - <link rel="canonical" href="https://blog.ethereum.org/2022/04/14/secured-no-3/"></link>
+			 * Add link to image (<meta property="og:image" content="https://blog.ethereum.org/img/ethereum-blog-og-image.png">)
+			 * Add twitter links
+			 */}
 			<Highlighted
 				title={post.title}
 				backLink='/blog'

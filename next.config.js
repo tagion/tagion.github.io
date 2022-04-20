@@ -1,6 +1,10 @@
+// import withPlugins from 'next-compose-plugins';
+// import withImages from 'next-images';
+
 const getBuildConfig = (...args) => {
 	const withPlugins = require('next-compose-plugins');
 	const withImages = require('next-images');
+
 	const withMDX = require('@next/mdx')({
 		extension: /\.mdx?$/,
 		options: {

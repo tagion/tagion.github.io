@@ -3,3 +3,4 @@ declare module '*.svg' {
 	export default content;
 }
 declare module '*.md';
+declare module '*.mdx';

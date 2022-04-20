@@ -25,9 +25,9 @@ function Application({ Component, pageProps }: AppProps) {
 
 	useEffect(() => {
 		const scrollToHashHandler = (url: string) => {
-			const id = url.replace('/#', ''),
+			const [_baseUrl, id] = url.split('#'),
 				section = document.getElementById(id),
-				headerHeight = isMobile() ? 80 : 106,
+				headerHeight = isMobile() ? 80 : 130,
 				topOffset = section?.offsetTop;
 
 			if (topOffset) {
@@ -37,7 +37,7 @@ function Application({ Component, pageProps }: AppProps) {
 						left: 0,
 						behavior: 'smooth',
 					});
-				}, 10);
+				}, 100);
 			}
 		};
 
@@ -59,6 +59,10 @@ function Application({ Component, pageProps }: AppProps) {
 			</ThemeProvider>
 		</Layout>
 	);
+}
+
+export function reportWebVitals(metric) {
+	console.log(metric);
 }
 
 export default Application;

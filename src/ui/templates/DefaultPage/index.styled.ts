@@ -10,7 +10,8 @@ const Styled = {
 		min-height: 100vh;
 		min-width: 375px;
 	`,
-	Main: styled.main.attrs(() => ({ id: 'main' }))`
+	Main: styled.main.attrs(() => ({ id: 'main' }))<{ isFullHeight: boolean }>`
+		${(p) => (p.isFullHeight ? 'display: flex;' : '')}
 		flex: 1 0 auto;
 		padding-top: 82px;
 

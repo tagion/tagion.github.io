@@ -10,3 +10,4 @@ export { Slider } from './Slider';
 export { Features } from './Features';
 export { Accordion } from './Accordion';
 export { Community } from './Community';
+export * from './Post';

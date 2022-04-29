@@ -1,13 +1,15 @@
 import fs from 'fs';
 import Head from 'next/head';
+import { Container } from 'react-bootstrap';
 import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
 import rehypeSlug from 'rehype-slug';
 import { v4 as uuid } from 'uuid';
 
 import { HeadSEO, Highlighted } from 'ui/organisms';
+import { S } from 'ui/organisms/Post/index.styled';
 import { ArticleImage, Navigation } from 'ui/molecules';
-import { Link } from 'ui/atoms';
+import { Link, Image } from 'ui/atoms';
 
 import posts from 'lib/content/blog/posts';
 
@@ -15,6 +17,7 @@ const Anchor = ({ id, children }) => <h4 id={id}>{children}</h4>;
 
 const components = {
 	Anchor,
+	ArticleImage,
 };
 
 const Post = ({ post }) => {
@@ -34,8 +37,9 @@ const Post = ({ post }) => {
 			 */}
 			<Highlighted
 				title={post.title}
-				backLink='/blog'
+				breadcrumbs={['/', '/blog', post.title]}
 				className='border-bottom-0'
+				contentWithPaddings={false}
 				isSidebarFixed
 				sidebarChildren={
 					post.navigation.length ? (
@@ -49,8 +53,20 @@ const Post = ({ post }) => {
 					) : null
 				}
 			>
-				<ArticleImage imageSrc={post.image} />
-				<MDXRemote {...post.content} components={components} />
+				<S.HeroContainer>
+					<Image src={post.image} alt={post.title} />
+				</S.HeroContainer>
+				<Container className='pt-4 pb-3 px-md-425'>
+					<h1 className='mb-2'>{post.title}</h1>
+					{post.published && (
+						<div className='mb-5'>
+							Published: <span className='text-aqua'>{post.published}</span>
+						</div>
+					)}
+					<S.Content>
+						<MDXRemote {...post.content} components={components} />
+					</S.Content>
+				</Container>
 			</Highlighted>
 		</>
 	);

@@ -3,6 +3,7 @@ const posts = [
 		title: 'What is Tagion',
 		description:
 			"The speculative nature of cryptocurrencies is hurting their adoption in the real economy. That is why Tagion's token supply is controlled by the algorithm, which uses internal metrics, like quantity and velocity of money...",
+		published: 'May 12, 2022',
 		image: '/images/blog/post1.svg',
 		url: '/blog/what-is-tagion',
 		slug: 'what-is-tagion',

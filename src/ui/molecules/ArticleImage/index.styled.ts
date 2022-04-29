@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
+export interface ContainerProps {
+	className?: string;
+}
+
 const S = {
-	Container: styled.div.attrs(() => ({ className: 'position-relative border-primary border mb-45' }))`
+	Container: styled.div.attrs<ContainerProps>(() => ({
+		className: `article-image position-relative border-primary border`,
+	}))<ContainerProps>`
 		height: 320px;
 		overflow: hidden;
 

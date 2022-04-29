@@ -9,7 +9,7 @@ const Blog = () => {
 	return (
 		<>
 			<HeadSEO title='Tagion Blog' description='Tagion blog with latest news' />
-			<Highlighted id='blog' title={'Blog'} backLink='/' className='border-bottom-0'>
+			<Highlighted id='blog' title={'Blog'} breadcrumbs={['/', 'Blog']} className='border-bottom-0'>
 				{posts.map(({ title, description, image, url }) => (
 					<PostItem key={uuid()} title={title} description={description} imageSrc={image} href={url} />
 				))}

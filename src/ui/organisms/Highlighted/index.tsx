@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
+import { v4 as uuid } from 'uuid';
 
 import { isMobile } from 'lib/utils';
 
@@ -16,6 +17,8 @@ const Highlighted: React.FunctionComponent<P> = ({
 	sidebarChildren,
 	isSidebarFixed = false,
 	backLink = null,
+	breadcrumbs,
+	contentWithPaddings = true,
 	...rest
 }) => {
 	const [isFixed, setIsFixed] = useState(false);
@@ -47,17 +50,32 @@ const Highlighted: React.FunctionComponent<P> = ({
 						className={`px-3 py-425 px-md-4 px-lg-5 py-lg-6 ${isFixed ? 'fixed' : ''}`}
 					>
 						<S.Title>
-							{backLink && (
+							{!backLink &&
+								breadcrumbs?.length &&
+								breadcrumbs.map((href, i) =>
+									i !== breadcrumbs.length - 1 ? (
+										<span key={uuid()}>
+											<Link href={href}>
+												{href === '/' && 'Home'}
+												{href === '/blog' && 'Blog'}
+											</Link>
+											{' / '}
+										</span>
+									) : (
+										<span key={uuid()}>{href}</span>
+									),
+								)}
+							{!breadcrumbs && backLink && (
 								<Link href={backLink}>
 									<ArrowLeft width='24px' height='24px' className='mb-1 me-1' />{' '}
 								</Link>
 							)}
-							{title}
+							{!breadcrumbs && title}
 						</S.Title>
 						{sidebarChildren}
 					</div>
 				</S.Sidebar>
-				<S.Content>{children}</S.Content>
+				<S.Content $withPaddings={contentWithPaddings}>{children}</S.Content>
 			</Row>
 		</Container>
 	);

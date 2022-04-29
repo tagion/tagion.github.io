@@ -4,6 +4,10 @@ import { Col } from 'react-bootstrap';
 import { SCREEN_SIZES } from 'lib/constants';
 import { AQUA_ISLAND } from 'lib/constants/colors';
 
+export interface ContentProps {
+	$withPaddings?: boolean;
+}
+
 const S = {
 	Title: styled.h2`
 		margin: 0;
@@ -31,10 +35,12 @@ const S = {
 			}
 		}
 	`,
-	Content: styled(Col).attrs(() => ({
-		className: `border-primary border-start border-end px-3 py-425 px-md-4 px-lg-5 py-lg-6`,
+	Content: styled(Col).attrs<ContentProps>(({ $withPaddings }) => ({
+		className: `border-primary border-start border-end ${
+			$withPaddings ? 'px-3 py-425 px-md-4 px-lg-5 py-lg-6' : 'p-0'
+		}`,
 		lg: 8,
-	}))`
+	}))<ContentProps>`
 		height: 100%;
 
 		h1,

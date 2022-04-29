@@ -5,4 +5,5 @@ export interface Props {
 	isExternal?: boolean;
 	withIcon?: boolean;
 	onClick?: () => void;
+	style?: React.CSSProperties;
 }

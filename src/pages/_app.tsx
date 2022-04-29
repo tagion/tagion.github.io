@@ -9,6 +9,7 @@ import Cookie from 'js-cookie';
 import { DefaultPage, Layout } from 'ui/templates';
 import { HeadSEO } from 'ui/organisms';
 import { Toast } from 'ui/molecules';
+import { Link } from 'ui/atoms';
 
 import { isMobile } from 'lib/utils';
 
@@ -82,7 +83,7 @@ function Application({ Component, pageProps }: AppProps) {
 							content={
 								<p className='mb-2'>
 									We are using cookies but all data is private. If you interested in more info, please
-									read <a href='/privacy-policy'>privacy policy</a>
+									read <Link href='/privacy-policy'>privacy policy</Link>
 								</p>
 							}
 							buttonHandler={() => Cookie.set('cookies-accepted', true)}

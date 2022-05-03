@@ -108,7 +108,7 @@ Websites or any services or materials available through the Websites.
 
 If you wish to make any use of materials on the Websites other than that
 set out in this section, please address your request to:
-<info@tagion.com>.
+<info@tagion.org>.
 
 If you print, copy, modify, download or otherwise use or provide any
 other person with access to any part of the Websites in breach of the
@@ -374,4 +374,4 @@ the Websites.
 
 This Websites is operated by the I25S team. All other feedback,
 comments, requests for technical support and other communications
-relating to the Websites should be directed to: <info@tagion.com>.
+relating to the Websites should be directed to: <info@tagion.org>.

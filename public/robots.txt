@@ -1,4 +1,4 @@
-Sitemap: https://tagion.com/sitemap.xml
+Sitemap: https://tagion.org/sitemap.xml
 
 User-agent: *
 Allow: /*

@@ -78,7 +78,8 @@ function Application({ Component, pageProps }: AppProps) {
 						aria-live='polite'
 						aria-atomic='true'
 					>
-						<Toast
+						{/* Apply when cookies used */}
+						{/* <Toast
 							title='Cookie Policy'
 							content={
 								<p className='mb-2'>
@@ -88,7 +89,7 @@ function Application({ Component, pageProps }: AppProps) {
 							}
 							buttonHandler={() => Cookie.set('cookies-accepted', true)}
 							buttonTitle='Accept'
-						/>
+						/> */}
 					</div>
 				)}
 			</ThemeProvider>

@@ -1,5 +1,7 @@
 import NextHead from 'next/head';
 
+const TRACKING_ID = 'GTM-TJ6STM7'; // OUR_TRACKING_ID
+
 const Head = () => {
 	return (
 		<NextHead>

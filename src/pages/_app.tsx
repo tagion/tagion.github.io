@@ -4,6 +4,7 @@ import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import TagManager from 'react-gtm-module';
 
 import { DefaultPage, Layout } from 'ui/templates';
 import { Head } from 'ui/organisms';
@@ -22,6 +23,10 @@ const theme = {};
 
 function Application({ Component, pageProps }: AppProps) {
 	const router = useRouter();
+
+	useEffect(() => {
+		TagManager.initialize({ gtmId: 'GTM-TJ6STM7' });
+	}, []);
 
 	useEffect(() => {
 		const scrollToHashHandler = (url: string) => {

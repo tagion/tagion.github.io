@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Cookie from 'js-cookie';
+import TagManager from 'react-gtm-module';
 
 import { DefaultPage, Layout } from 'ui/templates';
 import { HeadSEO } from 'ui/organisms';
@@ -29,6 +30,11 @@ function Application({ Component, pageProps }: AppProps) {
 
 	useEffect(() => {
 		setIsCookiesAccepted(!!Cookie.get('cookies-accepted'));
+	}, []);
+	
+
+	useEffect(() => {
+		TagManager.initialize({ gtmId: 'GTM-TJ6STM7' });
 	}, []);
 
 	useEffect(() => {

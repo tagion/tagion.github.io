@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Col } from 'react-bootstrap';
 
 import { SCREEN_SIZES } from 'lib/constants';
-import { AQUA_ISLAND } from 'lib/constants/colors';
 
 export interface ContentProps {
 	$withPaddings?: boolean;
@@ -27,6 +26,10 @@ const S = {
 			width: 33.333333%;
 		}
 
+		.sticky-sidebar {
+			width: 100%;
+		}
+
 		nav {
 			margin-top: 1rem;
 
@@ -42,19 +45,6 @@ const S = {
 		lg: 8,
 	}))<ContentProps>`
 		height: 100%;
-
-		h1,
-		h2,
-		h3,
-		h4,
-		h5 {
-			margin-bottom: 1.5rem;
-		}
-
-		a,
-		strong {
-			color: ${AQUA_ISLAND};
-		}
 	`,
 };
 

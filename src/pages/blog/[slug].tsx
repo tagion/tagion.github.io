@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
 import rehypeSlug from 'rehype-slug';
+import remarkGFM from 'remark-gfm';
 import { v4 as uuid } from 'uuid';
 
 import { HeadSEO, Highlighted } from 'ui/organisms';
@@ -58,6 +59,11 @@ const Post = ({ post }) => {
 				</S.HeroContainer>
 				<Container className='pt-4 pb-3 px-md-425'>
 					<h1 className='mb-2'>{post.title}</h1>
+					{post.author && (
+						<div className='mb-1'>
+							Author: <span className='text-aqua'>{post.author}</span>
+						</div>
+					)}
 					{post.published && (
 						<div className='mb-5'>
 							Published: <span className='text-aqua'>{post.published}</span>
@@ -88,7 +94,9 @@ export async function getStaticProps({ params, req }) {
 	const post = posts.find((p) => p.slug === slug);
 
 	const source = fs.readFileSync(`src/lib/content/blog/${slug}.mdx`, 'utf-8');
-	const content = await serialize(source, { mdxOptions: { rehypePlugins: [rehypeSlug] } });
+	const content = await serialize(source, {
+		mdxOptions: { rehypePlugins: [rehypeSlug], remarkPlugins: [remarkGFM] },
+	});
 
 	return {
 		props: { post: { ...post, content } },

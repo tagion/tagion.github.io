@@ -3,5 +3,7 @@ export interface P {
 	description?: string;
 	keywords?: string;
 	author?: string;
+	imageSrc?: string;
+	canonicalLink?: string;
 	isDefault?: boolean;
 }

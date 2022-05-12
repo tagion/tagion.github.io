@@ -10,8 +10,8 @@ const Blog = () => {
 		<>
 			<HeadSEO title='Tagion Blog' description='Tagion blog with latest news' />
 			<Highlighted id='blog' title={'Blog'} breadcrumbs={['/', 'Blog']} className='border-bottom-0'>
-				{posts.map(({ title, description, image, url }) => (
-					<PostItem key={uuid()} title={title} description={description} imageSrc={image} href={url} />
+				{posts.map(({ title, excerpt, image, url }) => (
+					<PostItem key={uuid()} title={title} description={excerpt} imageSrc={image} href={url} />
 				))}
 			</Highlighted>
 		</>

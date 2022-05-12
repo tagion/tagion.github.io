@@ -15,7 +15,7 @@ const getBuildConfig = (...args) => {
 	const nextConfig = {
 		/* config options here */
 		env: {
-			// customKey: 'my-value', pass custom runtime env variables
+			HOST: 'tagion.org', // pass custom runtime env variables
 		},
 		// basePath: '/path', // base site path ex: 'example.com/path'
 		distDir: 'build',

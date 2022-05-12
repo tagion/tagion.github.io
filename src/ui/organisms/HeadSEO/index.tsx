@@ -3,6 +3,8 @@ import { NextSeo, DefaultSeo } from 'next-seo';
 
 import config from 'src/lib/config/next-seo.config';
 
+import { HOST } from 'lib/constants';
+
 import { P } from './index.model';
 
 const HeadSEO: React.FunctionComponent<P> = ({
@@ -10,9 +12,13 @@ const HeadSEO: React.FunctionComponent<P> = ({
 	description,
 	keywords = '',
 	author = 'Tagion',
+	imageSrc = '',
 	isDefault = null,
+	canonicalLink = '',
+	...rest
 }) => {
 	const router = useRouter();
+	const rootUrl = `https://${HOST}`;
 
 	return (
 		<>
@@ -27,9 +33,22 @@ const HeadSEO: React.FunctionComponent<P> = ({
 			<NextSeo
 				title={title}
 				description={description}
+				canonical={canonicalLink || rootUrl}
 				openGraph={{
 					title,
 					description,
+					url: rootUrl,
+					site_name: 'Tagion',
+					type: 'website',
+					locale: 'en',
+					images: imageSrc
+						? [
+								{
+									url: imageSrc,
+									type: 'image/jpeg',
+								},
+						  ]
+						: [],
 				}}
 				additionalMetaTags={[
 					{
@@ -41,6 +60,7 @@ const HeadSEO: React.FunctionComponent<P> = ({
 						content: author,
 					},
 				]}
+				{...rest}
 			/>
 		</>
 	);

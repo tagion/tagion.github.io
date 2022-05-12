@@ -1,11 +1,12 @@
 import fs from 'fs';
-import Head from 'next/head';
 import { Container } from 'react-bootstrap';
+import { v4 as uuid } from 'uuid';
 import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
 import rehypeSlug from 'rehype-slug';
 import remarkGFM from 'remark-gfm';
-import { v4 as uuid } from 'uuid';
+
+import { HOST } from 'lib/constants';
 
 import { HeadSEO, Highlighted } from 'ui/organisms';
 import { S } from 'ui/organisms/Post/index.styled';
@@ -24,18 +25,14 @@ const components = {
 const Post = ({ post }) => {
 	return (
 		<>
-			<HeadSEO title={`${post.title} | Tagion Blog`} description={post.description} />
-			{/*
-			 * TODO:
-			 * Add shorten SEO description
-			 * Add SEO Keywords
-			 * Add author and date
-			 * Add links:
-			 * - <meta property="og:url" content={location.href}></meta>
-			 * - <link rel="canonical" href="https://blog.ethereum.org/2022/04/14/secured-no-3/"></link>
-			 * Add link to image (<meta property="og:image" content="https://blog.ethereum.org/img/ethereum-blog-og-image.png">)
-			 * Add twitter links
-			 */}
+			<HeadSEO
+				title={`${post.title} | Tagion Blog`}
+				description={post.excerpt}
+				keywords={post.seo.keywords}
+				author={post.author}
+				imageSrc={post.image}
+				canonicalLink={`https://${HOST}${post.url}`}
+			/>
 			<Highlighted
 				title={post.title}
 				breadcrumbs={['/', '/blog', post.title]}

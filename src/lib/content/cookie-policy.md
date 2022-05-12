@@ -1,4 +1,3 @@
-
 #### What Are Cookies
 As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.
 
@@ -45,4 +44,4 @@ Hopefully that has clarified things for you and as was previously mentioned if t
 
 However if you are still looking for more information then you can contact us through one of our preferred contact methods:
 
-- Email: [info@tagion.com](mailto:info@tagion.com)
+- Email: [info@tagion.org](mailto:info@tagion.org)

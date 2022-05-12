@@ -17,7 +17,9 @@ const Hero = () => {
 		<Container className='overflow-hidden'>
 			<Row className='border-primary border-bottom'>
 				<Col className='px-3 py-425 px-md-5 py-md-7 border-primary border-end border-start' lg={6}>
-					<h1 style={{ color: BG_COLOR, position: 'absolute', zIndex: -1 }}>We are {typingStrings[0]}</h1>{' '}
+					<h1 style={{ color: BG_COLOR, position: 'absolute', zIndex: -1, opacity: 0 }}>
+						We are {typingStrings[0]}
+					</h1>{' '}
 					{/* SEO hack */}
 					<Styled.Title>
 						We Are <br />

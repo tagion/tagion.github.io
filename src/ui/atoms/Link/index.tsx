@@ -13,7 +13,7 @@ const Lnk: React.FunctionComponent<Props> = (
 
 	return (
 		<Link {...rest} href={href} passHref={isExternal}>
-			<Styled.Link className={className || ''} withIcon={withIcon} target={target} onClick={onClick}>
+			<Styled.Link className={className || ''} withIcon={withIcon} target={target} href={href} onClick={onClick}>
 				{children}
 				{withIcon && renderIcon()}
 			</Styled.Link>

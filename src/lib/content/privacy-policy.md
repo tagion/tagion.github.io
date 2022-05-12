@@ -82,10 +82,10 @@ These rights may be subject to conditions or restrictions. For example, you may 
 
 #### 8. Contact I25S Regarding The Processing Of Personal Data
 
-If you wish to contact I25S regarding our processing of your personal data, please write to [info@tagion.com](mailto:info@tagion.com).
+If you wish to contact I25S regarding our processing of your personal data, please write to [info@tagion.org](mailto:info@tagion.org).
 
 If you are unhappy with our response, you can lodge a complaint with your local data protection authority.
 
 #### 9. Changes To In Our Privacy Policy
 
-This privacy policy replaces all previous versions. It will be necessary to update and amend this policy on an ongoing basis, and we reserve the right to update and amend it. In the event of an important amendment, we will notify you at [tagion.com](/) or send an email if we deem it necessary.
+This privacy policy replaces all previous versions. It will be necessary to update and amend this policy on an ongoing basis, and we reserve the right to update and amend it. In the event of an important amendment, we will notify you at [tagion.org](/) or send an email if we deem it necessary.

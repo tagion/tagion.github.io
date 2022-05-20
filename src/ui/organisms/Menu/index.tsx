@@ -11,10 +11,11 @@ const Menu: React.FunctionComponent<Props> = ({ withSpec = false, closeMenu }) =
 	return (
 		<>
 			<Styled.Nav>
-				<ControllerLink href='#roadmap'>Roadmap</ControllerLink>
-				<ControllerLink href='#about'>About</ControllerLink>
-				<ControllerLink href='#faq'>FAQ</ControllerLink>
-				<ControllerLink href='#community'>Community</ControllerLink>
+				<ControllerLink href='/#roadmap'>Roadmap</ControllerLink>
+				<ControllerLink href='/#about'>About</ControllerLink>
+				<ControllerLink href='/#faq'>FAQ</ControllerLink>
+				<ControllerLink href='/blog'>Blog</ControllerLink>
+				<ControllerLink href='/#community'>Community</ControllerLink>
 				<Link href='https://github.com/tagion' isExternal withIcon target='_blank'>
 					GitHub
 				</Link>

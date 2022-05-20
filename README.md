@@ -1,5 +1,7 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+We believe the financial system should serve its purpose in aiding the economy but not be a source of inequality. Tagion is the embodiment of a money system based on trust, equality, and freedom.
+
+With Tagion, people worldwide can trade goods, services, and digital assets without the need of middlemen such as banks and credit card companies. By enabling every person in the world to participate in the global economy directly, immediately, and without permission, Tagion is a force for positive change and progress for humankind.
 
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:

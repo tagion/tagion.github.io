@@ -1,13 +1,11 @@
 const posts = [
 	{
 		title: 'What is Tagion?',
-		// description:
-		// 	"The speculative nature of cryptocurrencies is hurting their adoption in the real economy. That is why Tagion's token supply is controlled by the algorithm, which uses internal metrics...",
 		excerpt:
 			'Understand Tagion, a decentralised, scalable and secure dlt-solution with a scalable proof-of-community governance model. Tagion is ground-breaking technology governed as a common.',
 		published: 'May 2022',
 		author: 'The Tagion Team',
-		image: '/images/blog/post1.svg',
+		image: '/images/blog/what-is-tagion.jpg',
 		url: '/blog/what-is-tagion',
 		slug: 'what-is-tagion',
 		seo: {
@@ -16,9 +14,14 @@ const posts = [
 				'Tagion, tagions, money, monetary system, Hashgraph, gossip protocol, DART, governance, Proof-of-community, DEX, dlt-solution, web3, tagion blockchain, decard, decentralised',
 		},
 		navigation: [
-			{ title: 'Overview', id: 'overview' },
-			{ title: 'Your Consent', id: 'your-consent' },
-			{ title: 'Aggregated Data', id: 'aggregated-data' },
+			{ title: 'Tagion is an alternative', id: 'tagion-is-an-alternative' },
+			{ title: 'Who are the users of Tagion?', id: 'who-are-the-users-of-tagion' },
+			{ title: 'A unique monetary system', id: 'a-unique-monetary-system' },
+			{ title: 'Ground-breaking technology', id: 'ground-breaking-technology' },
+			{ title: 'Tagion is different', id: 'tagion-is-different' },
+			{ title: 'Independent and useable money', id: 'independent-and-useable-money' },
+			{ title: 'Democratic Governance: Proof-of-community', id: 'democratic-governance-proof-of-community' },
+			{ title: 'To sum up', id: 'to-sum-up' },
 		],
 	},
 ];

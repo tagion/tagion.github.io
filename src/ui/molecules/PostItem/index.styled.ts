@@ -31,6 +31,7 @@ const S = {
 	`,
 	Image: styled.div.attrs(() => ({ className: `position-relative border-primary border` }))`
 		padding-bottom: 75.55%;
+		overflow: hidden;
 
 		img {
 			position: absolute;
@@ -38,6 +39,8 @@ const S = {
 			left: 50%;
 			top: 50%;
 			transform: translateX(-50%) translateY(-50%);
+			max-height: 100%;
+			max-width: none;
 		}
 	`,
 };

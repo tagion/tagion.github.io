@@ -23,7 +23,7 @@ const components = {
 };
 
 const Post = ({ post }) => {
-	console.log('sluggg');
+	console.log('slugg');
 	
 	return (
 		<>

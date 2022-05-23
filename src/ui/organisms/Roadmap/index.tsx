@@ -50,7 +50,7 @@ const Roadmap: React.FunctionComponent<Props> = ({ title, items, id = '' }) => {
 			<Styled.Title>{title}</Styled.Title>
 			<Styled.Container>
 				{renderBG}
-				<Row>{renderMilestones}</Row>
+				<Row className='m-0'>{renderMilestones}</Row>
 			</Styled.Container>
 		</Container>
 	);

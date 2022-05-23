@@ -8,7 +8,9 @@ const Styled = {
 		className: `${className}`,
 		theme,
 		...rest,
-	}))``,
+	}))`
+		${(p) => (p.$withIcon ? 'padding-right: 3.5rem;' : '')}
+	`,
 	Icon: styled(ArrowIcon)`
 		position: absolute;
 		top: 50%;

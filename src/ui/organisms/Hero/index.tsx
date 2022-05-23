@@ -17,7 +17,7 @@ const Hero = () => {
 		<Container className='overflow-hidden'>
 			<Row className='border-primary border-bottom'>
 				<Col className='px-3 py-425 px-md-5 py-md-7 border-primary border-end border-start' lg={6}>
-					<h1 style={{ color: BG_COLOR, position: 'absolute', zIndex: -1, opacity: 0 }}>
+					<h1 style={{ color: BG_COLOR, position: 'absolute', zIndex: -1, opacity: 0, visibility: 'hidden' }}>
 						We are {typingStrings[0]}
 					</h1>{' '}
 					{/* SEO hack */}
@@ -32,17 +32,19 @@ const Hero = () => {
 							}}
 						/>
 					</Styled.Title>
-					<p className='mb-3 mb-md-5 fw-bold'>
+					<p className='mb-3 mb-md-5'>
 						Tagion is a decentralized non-political monetary system, used and governed openly as a common
 						good.
 					</p>
 					<Styled.Link isExternal target='_blank' href='https://t.me/tagionChat'>
-						<Button style={{ minWidth: 220 }} className='me-3'>
+						<Button style={{ minWidth: 220 }} withIcon className='me-3'>
 							Say Hi
 						</Button>
 					</Styled.Link>
 					<Styled.Link isExternal target='_blank' href='/resources/tech-paper.pdf'>
-						<Button style={{ minWidth: 220 }}>Read Tech Paper</Button>
+						<Button style={{ minWidth: 220 }} withIcon>
+							Read Tech Paper
+						</Button>
 					</Styled.Link>
 				</Col>
 				<Styled.Scene>

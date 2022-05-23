@@ -45,8 +45,3 @@ jobs:
           destination-repository-name: 'dev-tagion.github.io'
           user-email: tini2n@gmail.com
           target-branch: master
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@4.1.1
-      with:
-        branch: gh-pages-develop
-        folder: out

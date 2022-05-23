@@ -4,7 +4,7 @@ import { Col } from 'react-bootstrap';
 import { SCREEN_SIZES } from 'lib/constants';
 
 const Styled = {
-	Title: styled.h2.attrs(() => ({ className: `text-center p-425 m-0 border-primary border-bottom` }))`
+	Title: styled.h2.attrs(() => ({ className: `text-left text-lg-center py-425 px-3 m-0 border-primary border-bottom` }))`
 		@media (min-width: ${SCREEN_SIZES.desktop}px) {
 			display: none;
 		}

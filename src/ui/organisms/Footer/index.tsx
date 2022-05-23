@@ -20,7 +20,7 @@ const Footer = () => {
 					<Styled.Logo />
 					<Styled.Copyright>&copy; {new Date().getFullYear()} Tagion. All rights reserved.</Styled.Copyright>
 				</Col>
-				<Col xs={{ span: 5 }} lg={{ order: 2, span: 3, offset: 1 }}>
+				<Col xs={{ span: 5 }} lg={{ order: 2, span: 3, offset: 3 }}>
 					<Paragraph>Contact Us: ir@tagion.org</Paragraph>
 					<Styled.Paragraph>
 						<Link href='/privacy-policy' className='mb-2 mb-lg-0 d-block d-lg-inline'>
@@ -31,7 +31,7 @@ const Footer = () => {
 						</Link>
 					</Styled.Paragraph>
 				</Col>
-				<Col xs={{ span: 3, offset: 3 }} lg={{ order: 3, span: 2 }}>
+				<Col xs={{ span: 3, offset: 3 }} lg={{ order: 3, span: 2, offset: 1 }}>
 					<Paragraph style={{ whiteSpace: 'nowrap' }}>
 						<Link href='https://github.com/tagion' isExternal withIcon target='_blank'>
 							GitHub

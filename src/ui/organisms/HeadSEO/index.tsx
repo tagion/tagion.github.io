@@ -50,6 +50,7 @@ const HeadSEO: React.FunctionComponent<P> = ({
 						  ]
 						: [],
 				}}
+				additionalLinkTags={config.additionalLinkTags}
 				additionalMetaTags={[
 					{
 						property: 'keywords',

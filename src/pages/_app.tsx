@@ -31,7 +31,6 @@ function Application({ Component, pageProps }: AppProps) {
 	useEffect(() => {
 		setIsCookiesAccepted(!!Cookie.get('cookies-accepted'));
 	}, []);
-	
 
 	useEffect(() => {
 		TagManager.initialize({ gtmId: 'GTM-TJ6STM7' });
@@ -39,9 +38,9 @@ function Application({ Component, pageProps }: AppProps) {
 
 	useEffect(() => {
 		const scrollToHashHandler = (url: string) => {
-			const [_baseUrl, id] = url.split('#'),
+			const [baseUrl, id] = url.split('#'),
 				section = document.getElementById(id),
-				headerHeight = isMobile() ? 80 : 130,
+				headerHeight = isMobile() ? 80 : baseUrl === '/' ? 105 : 130,
 				topOffset = section?.offsetTop;
 
 			if (topOffset) {

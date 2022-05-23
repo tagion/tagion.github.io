@@ -36,6 +36,16 @@ jobs:
       run: sed -i -e 's/tagion/dev.tagion/g' ./out/CNAME
     - name: Log CNAME file
       run: cat ./out/CNAME
+    - name: Push directory to another repository
+      uses: cpina/github-action-push-to-another-repository@v1.4.2
+      env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+          source-directory: './out'
+          destination-github-username: 'tagion'
+          destination-repository-name: 'dev-tagion.github.io'
+          user-email: tini2n@gmail.com
+          target-branch: master
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.1
       with:

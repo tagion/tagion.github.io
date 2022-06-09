@@ -14,7 +14,7 @@ const Ticker = () => {
 
 	return (
 		<Container className='py-425 px-0 py-lg-6 border-primary border-bottom border-end border-start'>
-			<ExtTicker>
+			<ExtTicker speed={8}>
 				{() => (
 					<Styled.Line className='mb-1'>
 						{firstRowContent.map((content) => (
@@ -26,7 +26,7 @@ const Ticker = () => {
 					</Styled.Line>
 				)}
 			</ExtTicker>
-			<ExtTicker direction='toRight'>
+			<ExtTicker speed={8} direction='toRight'>
 				{() => (
 					<Styled.Line>
 						{secondRowContent.map((content) => (

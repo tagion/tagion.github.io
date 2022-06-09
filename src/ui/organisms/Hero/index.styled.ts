@@ -95,7 +95,7 @@ const Styled = {
 		height: 100%;
 		background-image: repeating-linear-gradient(${DEEP_TURQUOISE} 0 1px, transparent 1px 100%),
 			repeating-linear-gradient(90deg, ${DEEP_TURQUOISE} 0 1px, transparent 1px 100%);
-		background-size: 71px 71px;
+		background-size: 10% 10%;
 		z-index: -1;
 	`,
 };

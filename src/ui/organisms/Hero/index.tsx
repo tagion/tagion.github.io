@@ -37,12 +37,12 @@ const Hero = () => {
 						good.
 					</p>
 					<Styled.Link isExternal target='_blank' href='https://t.me/tagionChat'>
-						<Button style={{ minWidth: 220 }} withIcon className='me-3'>
+						<Button style={{ minWidth: 240 }} withIcon className='me-3'>
 							Say Hi
 						</Button>
 					</Styled.Link>
 					<Styled.Link isExternal target='_blank' href='/resources/tech-paper.pdf'>
-						<Button style={{ minWidth: 220 }} withIcon>
+						<Button style={{ minWidth: 240 }} withIcon>
 							Read Tech Paper
 						</Button>
 					</Styled.Link>

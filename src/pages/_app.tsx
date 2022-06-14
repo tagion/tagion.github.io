@@ -26,14 +26,14 @@ const theme = {};
 
 function Application({ Component, pageProps }: AppProps) {
 	const router = useRouter();
-	const [isCookiesAccepted, setIsCookiesAccepted] = useState(false);
+	const [isCookiesAccepted, setIsCookiesAccepted] = useState(true);
 
 	useEffect(() => {
 		setIsCookiesAccepted(!!Cookie.get('cookies-accepted'));
-	}, []);
 
-	useEffect(() => {
 		TagManager.initialize({ gtmId: 'GTM-TJ6STM7' });
+
+		console.log(isCookiesAccepted);
 	}, []);
 
 	useEffect(() => {
@@ -91,7 +91,7 @@ function Application({ Component, pageProps }: AppProps) {
 									read <Link href='/privacy-policy'>privacy policy</Link>
 								</p>
 							}
-							buttonHandler={() => Cookie.set('cookies-accepted', true)}
+							buttonHandler={() => Cookie.set('cookies-accepted', 1)}
 							buttonTitle='Accept'
 						/>
 					</div>

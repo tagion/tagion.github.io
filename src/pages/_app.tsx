@@ -32,8 +32,6 @@ function Application({ Component, pageProps }: AppProps) {
 		setIsCookiesAccepted(!!Cookie.get('cookies-accepted'));
 
 		TagManager.initialize({ gtmId: 'GTM-TJ6STM7' });
-
-		console.log(isCookiesAccepted);
 	}, []);
 
 	useEffect(() => {

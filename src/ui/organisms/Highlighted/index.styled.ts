@@ -24,6 +24,11 @@ const S = {
 			position: fixed;
 			padding-right: 3.5rem;
 			width: 33.333333%;
+
+			@media (max-width: ${SCREEN_SIZES.desktop - 1}px) {
+				position: relative;
+				width: auto;
+			}
 		}
 
 		.sticky-sidebar {

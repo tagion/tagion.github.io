@@ -23,8 +23,6 @@ const components = {
 };
 
 const Post = ({ post }) => {
-	console.log('slug');
-	
 	return (
 		<>
 			<HeadSEO

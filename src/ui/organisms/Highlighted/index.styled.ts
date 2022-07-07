@@ -23,7 +23,7 @@ const S = {
 		.fixed {
 			position: fixed;
 			padding-right: 3.5rem;
-			width: 33%;
+			width: calc(33.33333333% - 1px);
 			height: 100%;
 			max-height: calc(100vh - 105px);
 			overflow: auto;

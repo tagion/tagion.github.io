@@ -24,6 +24,16 @@ const S = {
 		h4,
 		h5 {
 			margin-bottom: 1.5rem;
+
+			:not(:first-child) {
+				margin-top: 3rem;
+			}
+		}
+
+		h2 {
+			font-size: 1.25rem;
+			line-height: 1.5rem;
+			color: ${AQUA_ISLAND};
 		}
 
 		a,
@@ -61,6 +71,7 @@ const S = {
 
 		img {
 			max-width: 100%;
+			border: 1px solid;
 		}
 	`,
 };

@@ -23,7 +23,10 @@ const S = {
 		.fixed {
 			position: fixed;
 			padding-right: 3.5rem;
-			width: 33.333333%;
+			width: 33%;
+			height: 100%;
+			max-height: calc(100vh - 105px);
+			overflow: auto;
 
 			@media (max-width: ${SCREEN_SIZES.desktop - 1}px) {
 				position: relative;

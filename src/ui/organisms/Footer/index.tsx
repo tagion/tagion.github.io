@@ -16,11 +16,11 @@ const Footer = () => {
 	return (
 		<Styled.Container>
 			<Row className='align-items-center m-0'>
-				<Col xs={{ span: 12 }} lg={{ span: 3, order: 1 }}>
+				<Col xs={{ span: 12 }} lg={{ span: 4, order: 1 }}>
 					<Styled.Logo />
 					<Styled.Copyright>&copy; {new Date().getFullYear()} Tagion. All rights reserved.</Styled.Copyright>
 				</Col>
-				<Col xs={{ span: 5 }} lg={{ order: 2, span: 3, offset: 3 }}>
+				<Col xs={{ span: 5 }} lg={{ order: 2, span: 3, offset: 2 }}>
 					<Paragraph>Contact Us: ir@tagion.org</Paragraph>
 					<Styled.Paragraph>
 						<Link href='/privacy-policy' className='mb-2 mb-lg-0 d-block d-lg-inline'>

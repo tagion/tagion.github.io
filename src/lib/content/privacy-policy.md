@@ -2,28 +2,28 @@
 
 When you entrust us with your personal data, we promise in return to process this in a secure and transparent manner. We would appreciate if you would take the time to read through our privacy policy, so you are informed about how we handle your personal data.
 
-The purpose of this privacy policy is to explain how I25S collects and processes your personal data when you interact with our website. The privacy policy applies to tagion.org, but please do also be aware and check out how we make use of data collected in cookies when you visit tagion.org in our cookie policy at [Cookie Policy page](/cookie-policy).
+The purpose of this privacy policy is to explain how DECARD collects and processes your personal data when you interact with our website. The privacy policy applies to tagion.org.
 
-At I25S we receive data about all visitors on tagion.org.
+At DECARD we receive data about all visitors on tagion.org.
 
 #### 2. Data Controller
 
-I25S is the Data controller responsible for collecting and processing your personal data.
+DECARD is the Data controller responsible for collecting and processing your personal data.
 
 #### 3. We Use Personal Data For The Following Purposes
 
 In the below, we describe how we process your personal data. We recommend that you do not send or inform us of any sensitive information when you use our website and its features.
 
-We collect and process your personal information when you are using/requesting our digital services, customer communication, Marketing, newsletters, company announcements, and information about I25S.
+We collect and process your personal information when you are using/requesting our digital services, customer communication, Marketing, newsletters, company announcements, and information about DECARD.
 
 The necessary personal data is processed for the following purposes:
 
 Delivery of service: We collect the data to enable us to deliver a digital service requested by you.
-Optimization and development: We use the data to optimize and develop the user experience of tagion.org and the services we provide. For further details, see our cookie policy at [Cookie Policy page](/cookie-policy).
+Optimization and development: We use the data to optimize and develop the user experience of tagion.org and the services we provide.
 Statistics: We use the data to build usage statistics of our website, helping us to improve it.
 We process your personal data in order to communicate with you and to respond to your requests (e.g. providing service to you as a user and giving you the best possible service).
-We process your personal data in order to send you marketing material, newsletters, company announcements and other information from I25S, which you have consented to receive and so that you receive marketing material and information about us via social media (for example Facebook and LinkedIn), and personal data is also used to identify other persons who may be interested in I25S.
-We process your personal data when you request access to I25S’s press materials.
+We process your personal data in order to send you marketing material, newsletters, company announcements and other information from DECARD, which you have consented to receive and so that you receive marketing material and information about us via social media (for example Facebook and LinkedIn), and personal data is also used to identify other persons who may be interested in DECARD.
+We process your personal data when you request access to DECARD's press materials.
 We collect the data directly from you.
 
 We process the following categories of data about you:
@@ -43,12 +43,12 @@ It is in our interest to be able to give our business partners (agencies, photog
 We store your personal data as long as it is necessary for the purposes mentioned:
 
 We store your general personal data for up to two years from the date on which we registered your visit to our website.
-We store your personal data as long as you have consented to receive marketing material from us, including our newsletter and company announcements. We erase your data within six months from the date on which you unsubscribe receipt of marketing material, newsletters, company announcements and other information about I25S.
+We store your personal data as long as you have consented to receive marketing material from us, including our newsletter and company announcements. We erase your data within six months from the date on which you unsubscribe receipt of marketing material, newsletters, company announcements and other information about DECARD.
 We store your personal data for the duration of our business relationship with you.
 
 #### 4. Receivers Of Your Personal Data
 
-Depending on the circumstances, I25S may share your data with:
+Depending on the circumstances, DECARD may share your data with:
 
 Suppliers, including IT suppliers, support, suppliers of goods and financial institutions, cooperating with us.
 Public authorities.
@@ -76,13 +76,13 @@ You have the right to receive the personal data that you have provided yourself 
 You have the right to lodge a complaint with a supervisory authority, for example, the relevant Data Protection Agency.
 We will ensure that there are appropriate safeguards using the standard contractual clauses for the transfer of personal data to third countries, as published by the European Commission.
 
-You can exercise your rights by contacting us, see section 8. If you have requested to receive information from I25S, such as newsletters, and you no longer wish to receive these, you can unsubscribe at any time via the email that you receive or by contacting us.
+You can exercise your rights by contacting us, see section 8. If you have requested to receive information from DECARD, such as newsletters, and you no longer wish to receive these, you can unsubscribe at any time via the email that you receive or by contacting us.
 
 These rights may be subject to conditions or restrictions. For example, you may not have the right to data portability in the case in question. It depends on the specific circumstances in connection with the processing activities.
 
-#### 8. Contact I25S Regarding The Processing Of Personal Data
+#### 8. Contact DECARD Regarding The Processing Of Personal Data
 
-If you wish to contact I25S regarding our processing of your personal data, please write to [info@tagion.org](mailto:info@tagion.org).
+If you wish to contact DECARD regarding our processing of your personal data, please write to [info@tagion.org](mailto:info@tagion.org).
 
 If you are unhappy with our response, you can lodge a complaint with your local data protection authority.
 

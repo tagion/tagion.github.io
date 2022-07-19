@@ -1,5 +1,5 @@
 Acceptance of the Terms of Use These terms of use are entered into by
-and between you and the I25S (\"we\" or \"us\"). The following terms and conditions, together with any documents
+and between you and the DECARD (\"we\" or \"us\"). The following terms and conditions, together with any documents
 they expressly incorporate by reference (collectively, these \"Terms of
 Use\"), govern your access to and use of tagion.org, including any
 content, functionality and services offered on or through tagion.org (\"Website\").
@@ -10,9 +10,9 @@ Terms of Use when this option is made available to you, you accept and
 agree to be bound and abide by these Terms of Use in addition to
 
 - our [Privacy Policy](/privacy-policy), incorporated herein by
-  reference; and
-- our [Cookie Policy](/cookie-policy), incorporated herein by
-  reference.
+  reference;
+<!-- - our [Cookie Policy](/cookie-policy), incorporated herein by
+  reference. -->
 
 If you do not to agree to these Terms of Use or the Privacy Policy, you
 must not access or use the Websites.
@@ -75,7 +75,7 @@ able to view or record your personal information.
 The Websites and its entire contents, features and functionality
 (including but not limited to all information, software, text, displays,
 images, video and audio, and the design, selection and arrangement
-thereof), are owned by the I25S, its licensors or other providers
+thereof), are owned by the DECARD, its licensors or other providers
 of such material and are protected by copyright, trademark, patent,
 trade secret and other intellectual property or proprietary rights laws.
 
@@ -122,7 +122,7 @@ these Terms of Use and may violate copyright, trademark and other laws.
 
 ##### Trademarks
 
-The term I25S, the I25S logo and all related names, logos, product and service names,
+The term DECARD, the DECARD logo and all related names, logos, product and service names,
 designs and slogans are trademarks of the Entity or its affiliates
 or licensors. You must not use such marks without the prior written
 permission of the Entity. All other names, logos, product and
@@ -147,13 +147,13 @@ these Terms of Use. You agree not to use the Website:
   promotional material without our prior written consent, including
   any \"junk mail\", \"chain letter\" or \"spam\" or any other similar
   solicitation.
-- To impersonate or attempt to impersonate the I25S, a
-  I25S employee, another user or any other person or entity
+- To impersonate or attempt to impersonate the DECARD, a
+  DECARD employee, another user or any other person or entity
   (including, without limitation, by using e-mail addresses or screen
   names associated with any of the foregoing).
 - To engage in any other conduct that restricts or inhibits anyone\'s
   use or enjoyment of the Website, or which, as determined by us, may
-  harm the I25S or users of the Websites or expose them to
+  harm the DECARD or users of the Websites or expose them to
   liability.
 
 Additionally, you agree not to:
@@ -196,9 +196,9 @@ materials provided by other users, bloggers and third-party licensors,
 syndicators, aggregators and/or reporting services. All statements
 and/or opinions expressed in these materials, and all articles and
 responses to questions and other content, other than the content
-provided by the I25S, are solely the opinions and the
+provided by the DECARD, are solely the opinions and the
 responsibility of the person or entity providing those materials. These
-materials do not necessarily reflect the opinion of the I25S. We
+materials do not necessarily reflect the opinion of the DECARD. We
 are not responsible, or liable to you or any third party, for the
 content or accuracy of any materials provided by any third parties.
 
@@ -318,7 +318,7 @@ APPLICABLE LAW WHICH MAY INCLUDE FRAUD.
 
 #### Indemnification
 
-You agree to defend, indemnify and hold harmless the I25S, its
+You agree to defend, indemnify and hold harmless the DECARD, its
 affiliates, licensors and service providers, and its and their
 respective officers, directors, employees, contractors, agents,
 licensors, suppliers, successors and assigns from and against any
@@ -349,10 +349,10 @@ you by such courts and to venue in such courts.
 
 #### Waiver and Severability
 
-No waiver of by the I25S of any term or condition set forth in
+No waiver of by the DECARD of any term or condition set forth in
 these Terms of Use shall be deemed a further or continuing waiver of
 such term or condition or a waiver of any other term or condition, and
-any failure of the I25S to assert a right or provision under these
+any failure of the DECARD to assert a right or provision under these
 Terms of Use shall not constitute a waiver of such right or provision.
 
 If any provision of these Terms of Use is held by a court or other
@@ -365,13 +365,13 @@ Terms of Use will continue in full force and effect.
 
 The Terms of Use, our Privacy Policy and terms of conditions for the
 registration of events constitute the sole and entire agreement between
-you and the I25S with respect to the Websites and
+you and the DECARD with respect to the Websites and
 supersede all prior and contemporaneous understandings, agreements,
 representations and warranties, both written and oral, with respect to
 the Websites.
 
 #### Your Comments and Concerns
 
-This Websites is operated by the I25S team. All other feedback,
+This Websites is operated by the DECARD team. All other feedback,
 comments, requests for technical support and other communications
 relating to the Websites should be directed to: <info@tagion.org>.

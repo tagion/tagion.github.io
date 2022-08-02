@@ -36,7 +36,7 @@ const Post = ({ post }) => {
 			<Highlighted
 				title={post.title}
 				breadcrumbs={['/', '/blog', post.title]}
-				className='border-bottom-0'
+				className='overflow-hidden border-bottom-0 border-primary border-end border-start'
 				contentWithPaddings={false}
 				isSidebarFixed
 				sidebarChildren={
@@ -54,7 +54,7 @@ const Post = ({ post }) => {
 				<S.HeroContainer>
 					<Image src={post.image} alt={post.title} />
 				</S.HeroContainer>
-				<Container className='pt-4 pb-3 px-md-425'>
+				<Container className='px-3 pt-4 pb-3 px-md-425'>
 					<h1 className='mb-2'>{post.title}</h1>
 					{post.author && (
 						<div className='mb-1'>

@@ -19,6 +19,7 @@ const Highlighted: React.FunctionComponent<P> = ({
 	backLink = null,
 	breadcrumbs,
 	contentWithPaddings = true,
+	className,
 	...rest
 }) => {
 	const [isFixed, setIsFixed] = useState(false);
@@ -42,7 +43,7 @@ const Highlighted: React.FunctionComponent<P> = ({
 	}, []);
 
 	return (
-		<Container className='border-primary border-bottom' {...rest}>
+		<Container className={`border-primary border-bottom border-start border-end ${className}`} {...rest}>
 			<Row style={{ height: '100%' }}>
 				<S.Sidebar>
 					<div

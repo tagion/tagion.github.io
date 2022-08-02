@@ -20,7 +20,7 @@ const Features: React.FunctionComponent<Props> = ({ imageIsRight = false, title 
 					<ImageContainer className='border-primary border-end'>{image}</ImageContainer>
 				)}
 				<Styled.TextContainer md={8}>
-					<Container className='pb-425 py-lg-6 px-lg-5'>
+					<Container className='px-3 pb-425 py-lg-6 px-lg-5'>
 						<Styled.DesktopTitle>{title}</Styled.DesktopTitle>
 						{children}
 					</Container>

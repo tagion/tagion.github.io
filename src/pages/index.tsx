@@ -78,7 +78,7 @@ const Index = () => {
 	return (
 		<>
 			<Hero />
-			<Highlighted id='about' title={welcomeContent.title}>
+			<Highlighted id='about' title={welcomeContent.title} className='overflow-hidden'>
 				<WelcomeContent />
 			</Highlighted>
 			<Roadmap id='roadmap' title={roadmapContent.title} items={roadmapItems} />
@@ -90,7 +90,7 @@ const Index = () => {
 				{mobile ? <Accordion items={tagionVsCashItems} /> : <TagionVsCashContent />}
 			</Features>
 			<Ticker />
-			<Highlighted id='faq' title={faqContent.title}>
+			<Highlighted id='faq' title={faqContent.title} className='overflow-hidden'>
 				<Accordion items={faqItems} />
 			</Highlighted>
 			<Community id='community' />

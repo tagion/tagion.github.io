@@ -17,7 +17,7 @@ const S = {
 		}
 	`,
 	Sidebar: styled(Col).attrs(() => ({
-		className: `border-primary border-end border-bottom border-start border-lg-bottom-0 border-lg-right-0 p-0`,
+		className: `border-primary border-end border-bottom border-lg-bottom-0 border-lg-right-0 p-0`,
 		lg: 4,
 	}))`
 		.fixed {
@@ -47,7 +47,7 @@ const S = {
 		}
 	`,
 	Content: styled(Col).attrs<ContentProps>(({ $withPaddings }) => ({
-		className: `border-primary border-start border-end ${
+		className: `border-primary border-start ${
 			$withPaddings ? 'px-3 py-425 px-md-4 px-lg-5 py-lg-6' : 'p-0'
 		}`,
 		lg: 8,

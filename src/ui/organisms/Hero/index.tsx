@@ -14,7 +14,7 @@ const Hero = () => {
 	const typingStrings = content.hero.children.map(({ content }) => content);
 
 	return (
-		<Container className='overflow-hidden'>
+		<Container className='overflow-hidden border-primary border-end border-start'>
 			<Row className='border-primary border-bottom'>
 				<Col className='px-3 py-425 px-md-5 py-md-7 border-primary border-end border-start' lg={6}>
 					<h1 style={{ color: BG_COLOR, position: 'absolute', zIndex: -1, opacity: 0, visibility: 'hidden' }}>

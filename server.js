@@ -13,18 +13,18 @@ const handle = app.getRequestHandler();
 
 // HTTPs local certificates
 const httpsOptions = {
-    key: fs.readFileSync('./certificates/localhost.key'),
-    cert: fs.readFileSync('./certificates/localhost.crt'),
+	key: fs.readFileSync('./certificates/localhost.key'),
+	cert: fs.readFileSync('./certificates/localhost.crt'),
 };
 
 app.prepare().then(() => {
-    createServer(httpsOptions, (req, res) => {
-        const parsedUrl = parse(req.url, true);
+	createServer(httpsOptions, (req, res) => {
+		const parsedUrl = parse(req.url, true);
 
-        handle(req, res, parsedUrl);
-    }).listen(port, (error) => {
-        if (error) throw error;
+		handle(req, res, parsedUrl);
+	}).listen(port, (error) => {
+		if (error) throw error;
 
-        console.log(`> Server started on https://localhost:${port}`);
-    });
+		console.log(`> Server started on https://localhost:${port}`);
+	});
 });

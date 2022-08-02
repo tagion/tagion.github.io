@@ -39,12 +39,12 @@
 			{
 				"title": "Tagion Playnet",
 				"isComing": true,
-				"children": [{ "content": "Testing quality" }, { "content": "Early 2022" }]
+				"children": [{ "content": "Testing quality" }, { "content": "Early Q3 - 2022" }]
 			},
 			{
-				"title": "MainNet Live",
+				"title": "Mainnet Live",
 				"isComing": true,
-				"children": [{ "content": "Launching the MainNet" }, { "content": "Mid 2022" }]
+				"children": [{ "content": "In progress" }, { "content": "Late 2022" }]
 			},
 			{
 				"title": " Sub-Darts / Decentralized Exchange",

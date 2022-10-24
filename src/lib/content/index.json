@@ -39,7 +39,7 @@
 			{
 				"title": "Tagion Playnet",
 				"isComing": true,
-				"children": [{ "content": "In progress" }, { "content": "Q3 - 2022" }]
+				"children": [{ "content": "In progress" }, { "content": "Q4 - 2022" }]
 			},
 			{
 				"title": "Mainnet Live",
@@ -49,7 +49,7 @@
 			{
 				"title": " Sub-Darts / Decentralized Exchange",
 				"isComing": true,
-				"children": [{ "content": "On-chain DEX with price discovery" }, { "content": "2023" }]
+				"children": [{ "content": "On-chain DEX with price discovery" }, { "content": "2024" }]
 			}
 		]
 	},
@@ -125,7 +125,7 @@
 				"title": "When can I use tagions?",
 				"children": [
 					{
-						"content": "The Tagion system is currently undergoing rigorous testing and is set to be released later in the year, once the system meets the high demands for security and quality. Once released, Tagion will gradually be made available for use for things such as payments and easy cross-border money transfers."
+						"content": "The Tagion system is currently undergoing rigorous testing and is set to be released Q1 2023, once the system meets the high demands for security and quality. Once released, Tagion will gradually be made available for use for things such as payments and easy cross-border money transfers."
 					}
 				]
 			},

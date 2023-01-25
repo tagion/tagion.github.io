@@ -18,41 +18,6 @@
 			}
 		]
 	},
-	"roadmap": {
-		"title": "Roadmap",
-		"children": [
-			{
-				"title": "Ideation & Start Work",
-				"children": [{ "content": "Project Tagion formally started" }, { "content": "July, 2017" }]
-			},
-			{
-				"title": "First Techpaper & Whitepaper",
-				"children": [{ "content": "Including core prototypes" }, { "content": "Dec, 2018" }]
-			},
-			{
-				"title": "Stable Network Software",
-				"children": [
-					{ "content": "Transactions tested with 300+ users via iOS App" },
-					{ "content": "Summer, 2021" }
-				]
-			},
-			{
-				"title": "Tagion Playnet",
-				"isComing": true,
-				"children": [{ "content": "In progress" }, { "content": "Q4 - 2022" }]
-			},
-			{
-				"title": "Mainnet Live",
-				"isComing": true,
-				"children": [{ "content": "Live Network" }, { "content": "Q1 - 2023" }]
-			},
-			{
-				"title": " Sub-Darts / Decentralized Exchange",
-				"isComing": true,
-				"children": [{ "content": "On-chain DEX with price discovery" }, { "content": "2024" }]
-			}
-		]
-	},
 	"howItWorks": {
 		"title": "How Tagion Works",
 		"children": [

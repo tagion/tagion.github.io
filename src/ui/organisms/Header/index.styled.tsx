@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Container } from 'react-bootstrap';
 
-import { SCREEN_SIZES } from 'lib/constants';
+import { POSITION_SIZES, SCREEN_SIZES } from 'lib/constants';
 import { BG_COLOR } from 'lib/constants/colors';
 
 const Styled = {
@@ -24,7 +24,7 @@ const Styled = {
 		$isOpened,
 	}))`
 		position: fixed;
-		top: 81px;
+		top: ${POSITION_SIZES.TOP_FIXED_MENU}px;
 		left: 50%;
 		width: 100%;
 		background: ${BG_COLOR};
@@ -32,12 +32,15 @@ const Styled = {
 		transform: translateY(-100%) translateX(-50%);
 		pointer-event: none;
 		z-index: 2;
+		${({ $isMenuScrolling }) =>
+			$isMenuScrolling ? `overflow: scroll; height: calc(100% - ${POSITION_SIZES.TOP_FIXED_MENU}px);` : ''}
 
 		&.opened {
 			transform: translateY(0%) translateX(-50%);
 			pointer-event: auto;
 		}
-
+	`,
+	MenuWrapper: styled.div`
 		> nav {
 			display: block !important;
 			padding: 3rem 1.5rem;

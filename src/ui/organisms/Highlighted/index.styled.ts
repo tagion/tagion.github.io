@@ -41,7 +41,7 @@ const S = {
 		nav {
 			margin-top: 1rem;
 
-			@media (max-width: ${SCREEN_SIZES.desktop}px) {
+			@media (max-width: ${SCREEN_SIZES.desktop - 1}px) {
 				display: none;
 			}
 		}

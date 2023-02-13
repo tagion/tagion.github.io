@@ -43,7 +43,7 @@ const Highlighted: React.FunctionComponent<P> = ({
 	}, []);
 
 	return (
-		<Container className={`border-primary border-bottom border-start border-end ${className}`} {...rest}>
+		<Container className={`overflow-hidden border-primary border-bottom border-start border-end ${className}`} {...rest}>
 			<Row style={{ height: '100%' }}>
 				<S.Sidebar>
 					<div

@@ -23,6 +23,7 @@ const Highlighted: React.FunctionComponent<P> = ({
 	...rest
 }) => {
 	const [isFixed, setIsFixed] = useState(false);
+	const [sidebarWidth, setSidebarWidth] = useState<number>(0);
 
 	const scrollHandler = () => {
 		const windowScrollHeight = document.body.scrollTop || document.documentElement.scrollTop;
@@ -42,10 +43,23 @@ const Highlighted: React.FunctionComponent<P> = ({
 		}
 	}, []);
 
+	useEffect(() => {
+		const sidebarDOM = document.getElementById('sidebar');
+
+		if (isSidebarFixed && !isMobile()) {
+			sidebarDOM && setSidebarWidth(sidebarDOM.offsetWidth || 0);
+			window.addEventListener('resize', () => {
+				sidebarDOM && setSidebarWidth(sidebarDOM.offsetWidth || 0);
+			});
+
+			return () => window.removeEventListener('resize', () => {});
+		}
+	}, []);
+
 	return (
 		<Container className={`border-primary border-bottom border-start border-end ${className}`} {...rest}>
 			<Row style={{ height: '100%' }}>
-				<S.Sidebar>
+				<S.Sidebar id='sidebar' $sidebarWidth={sidebarWidth}>
 					<div
 						id='sticky-sidebar'
 						className={`px-3 py-425 px-md-4 px-lg-5 py-lg-6 ${isFixed ? 'fixed' : ''}`}

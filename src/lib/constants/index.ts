@@ -12,3 +12,7 @@ export enum SCREEN_SIZES {
 	desktopL = 1280,
 	desktopXl = 1440,
 }
+
+export enum POSITION_SIZES {
+	TOP_FIXED_MENU = 81,
+}

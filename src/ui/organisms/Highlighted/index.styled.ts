@@ -19,11 +19,13 @@ const S = {
 	Sidebar: styled(Col).attrs(() => ({
 		className: `border-primary border-end border-bottom border-lg-bottom-0 border-lg-right-0 p-0`,
 		lg: 4,
-	}))`
+	}))<{
+		$sidebarWidth: number;
+	}>`
 		.fixed {
 			position: fixed;
 			padding-right: 3.5rem;
-			width: calc(33.33333333% - 1px);
+			width: ${(p) => `${p.$sidebarWidth}px`};
 			height: 100%;
 			max-height: calc(100vh - 105px);
 			overflow: auto;
@@ -41,7 +43,7 @@ const S = {
 		nav {
 			margin-top: 1rem;
 
-			@media (max-width: ${SCREEN_SIZES.desktop}px) {
+			@media (max-width: ${SCREEN_SIZES.desktop - 1}px) {
 				display: none;
 			}
 		}

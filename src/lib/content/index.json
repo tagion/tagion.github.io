@@ -18,41 +18,6 @@
 			}
 		]
 	},
-	"roadmap": {
-		"title": "Roadmap",
-		"children": [
-			{
-				"title": "Ideation & Start Work",
-				"children": [{ "content": "Project Tagion formally started" }, { "content": "July, 2017" }]
-			},
-			{
-				"title": "First Techpaper & Whitepaper",
-				"children": [{ "content": "Including core prototypes" }, { "content": "Dec, 2018" }]
-			},
-			{
-				"title": "Stable Network Software",
-				"children": [
-					{ "content": "Transactions tested with 300+ users via iOS App" },
-					{ "content": "Summer, 2021" }
-				]
-			},
-			{
-				"title": "Tagion Playnet",
-				"isComing": true,
-				"children": [{ "content": "In progress" }, { "content": "Q3 - 2022" }]
-			},
-			{
-				"title": "Mainnet Live",
-				"isComing": true,
-				"children": [{ "content": "Live Network" }, { "content": "Q1 - 2023" }]
-			},
-			{
-				"title": " Sub-Darts / Decentralized Exchange",
-				"isComing": true,
-				"children": [{ "content": "On-chain DEX with price discovery" }, { "content": "2023" }]
-			}
-		]
-	},
 	"howItWorks": {
 		"title": "How Tagion Works",
 		"children": [
@@ -125,7 +90,7 @@
 				"title": "When can I use tagions?",
 				"children": [
 					{
-						"content": "The Tagion system is currently undergoing rigorous testing and is set to be released later in the year, once the system meets the high demands for security and quality. Once released, Tagion will gradually be made available for use for things such as payments and easy cross-border money transfers."
+						"content": "The Tagion system is currently undergoing rigorous testing and is set to be released Q1 2023, once the system meets the high demands for security and quality. Once released, Tagion will gradually be made available for use for things such as payments and easy cross-border money transfers."
 					}
 				]
 			},

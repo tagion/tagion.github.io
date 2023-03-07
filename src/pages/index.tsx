@@ -13,8 +13,8 @@ import BankIcon from 'lib/icons/bank.svg';
 const tagionVsCryptoContent = content.tagionVsCrypto,
 	tagionVsCash = content.tagionVsCash,
 	welcomeContent = content.welcome,
-	faqContent = content.faq,
-	roadmapContent = content.roadmap;
+	faqContent = content.faq;
+	// roadmapContent = content.roadmap;
 
 const TagionVsCryptoContent = () => {
 	const content = tagionVsCryptoContent.children.map(({ title, content }) => {
@@ -67,13 +67,13 @@ const Index = () => {
 		tagionVsCashItems = tagionVsCash.children.map(({ title, content }) => ({
 			title,
 			content: <p>{content}</p>,
-		})),
-		roadmapItems = roadmapContent.children.map(({ title, children, isComing = false }) => ({
-			title,
-			isComing,
-			description: children[0].content,
-			date: children[1].content,
 		}));
+		// roadmapItems = roadmapContent.children.map(({ title, children, isComing = false }) => ({
+		// 	title,
+		// 	isComing,
+		// 	description: children[0].content,
+		// 	date: children[1].content,
+		// }));
 
 	return (
 		<>
@@ -81,7 +81,7 @@ const Index = () => {
 			<Highlighted id='about' title={welcomeContent.title} className='overflow-hidden'>
 				<WelcomeContent />
 			</Highlighted>
-			<Roadmap id='roadmap' title={roadmapContent.title} items={roadmapItems} />
+			{/* <Roadmap id='roadmap' title={roadmapContent.title} items={roadmapItems} /> */}
 			<FeatureCards id='how-it-works' />
 			<Features id='features' title={tagionVsCryptoContent.title} image={<ComputerIcon width='300px' />}>
 				{mobile ? <Accordion items={tagionVsCryptoItems} /> : <TagionVsCryptoContent />}

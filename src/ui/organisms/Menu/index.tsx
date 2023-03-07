@@ -11,7 +11,7 @@ const Menu: React.FunctionComponent<Props> = ({ withSpec = false, closeMenu }) =
 	return (
 		<>
 			<Styled.Nav>
-				<ControllerLink href='/#roadmap'>Roadmap</ControllerLink>
+				{/* <ControllerLink href='/#roadmap'>Roadmap</ControllerLink> */}
 				<ControllerLink href='/#about'>About</ControllerLink>
 				<ControllerLink href='/#faq'>FAQ</ControllerLink>
 				<ControllerLink href='/blog'>Blog</ControllerLink>

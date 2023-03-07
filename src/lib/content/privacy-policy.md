@@ -22,7 +22,7 @@ Delivery of service: We collect the data to enable us to deliver a digital servi
 Optimization and development: We use the data to optimize and develop the user experience of tagion.org and the services we provide.
 Statistics: We use the data to build usage statistics of our website, helping us to improve it.
 We process your personal data in order to communicate with you and to respond to your requests (e.g. providing service to you as a user and giving you the best possible service).
-We process your personal data in order to send you marketing material, newsletters, company announcements and other information from DECARD, which you have consented to receive and so that you receive marketing material and information about us via social media (for example Facebook and LinkedIn), and personal data is also used to identify other persons who may be interested in DECARD.
+We process your personal data in order to send you marketing material, newsletters, company announcements and other information from DECARD, which you have consented to receive and so that you receive marketing material and information about us via social media (for example LinkedIn), and personal data is also used to identify other persons who may be interested in DECARD.
 We process your personal data when you request access to DECARD's press materials.
 We collect the data directly from you.
 

@@ -6,7 +6,7 @@ import { Styled } from './index.styled';
 
 import cnt from 'lib/content/index.json';
 import TgIcon from 'lib/icons/telegram.svg';
-import FbIcon from 'lib/icons/facebook.svg';
+import DcIcon from 'lib/icons/discord.svg';
 import YtIcon from 'lib/icons/youtube.svg';
 import TwIcon from 'lib/icons/twitter.svg';
 
@@ -41,7 +41,7 @@ const Community = (props) => {
 						title={content.children[2].title}
 						label={content.children[2].label}
 						description={content.children[2].content}
-						icon={<FbIcon />}
+						icon={<DcIcon />}
 						className='mb-2 mb-lg-4'
 					/>
 					<SocialItem

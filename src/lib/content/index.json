@@ -117,13 +117,13 @@
 		"children": [
 			{
 				"title": "Telegram",
-				"label": "Conversations",
+				"label": "Announcements",
 				"content": "Join the tribe",
 				"url": "https://t.me/tagionChat"
 			},
       {
 				"title": "Discord",
-				"label": "Announcements",
+				"label": "Conversations",
 				"content": "Follow the latest news",
 				"url": "https://discord.gg/k7Rqmu78PZ"
 			},

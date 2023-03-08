@@ -21,7 +21,7 @@ const Footer = () => {
 					<Styled.Copyright>&copy; {new Date().getFullYear()} Tagion. All rights reserved.</Styled.Copyright>
 				</Col>
 				<Col xs={{ span: 5 }} lg={{ order: 2, span: 3, offset: 2 }}>
-					<Paragraph>Contact Us: ir@tagion.org</Paragraph>
+					<Paragraph>Contact Us: ir@tagion.com</Paragraph>
 					<Styled.Paragraph>
 						<Link href='/privacy-policy' className='mb-2 mb-lg-0 d-block d-lg-inline'>
 							Privacy Policy
